@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Number1_100ToTextXVI
+namespace _16Number1_100ToText
 {
     class Program
     {
