@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _16StupitPasswordGenerator
+namespace _16StupidPasswordGenerator
 {
     class Program
     {
