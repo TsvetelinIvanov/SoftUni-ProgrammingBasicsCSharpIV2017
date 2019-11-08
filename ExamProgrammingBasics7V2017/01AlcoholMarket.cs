@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01AlcoholExchange
+namespace _01AlcoholMarket
 {
     class Program
     {
