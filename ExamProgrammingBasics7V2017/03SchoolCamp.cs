@@ -50,6 +50,7 @@ namespace _03SchoolCamp
                         break;
                     }
             }
+            
             double totalCost = price * students * nights;
 
             if (students >= 50)
