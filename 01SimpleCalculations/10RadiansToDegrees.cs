@@ -10,8 +10,8 @@ namespace _10RadiansToDegrees
     {
         static void Main(string[] args)
         {
-            var rad = double.Parse(Console.ReadLine());
-            var deg = Math.Round((rad * 57.29578), 0);
+            double rad = double.Parse(Console.ReadLine());
+            double deg = Math.Round((rad * 57.29578), 0);
             Console.WriteLine(deg);
         }
     }
