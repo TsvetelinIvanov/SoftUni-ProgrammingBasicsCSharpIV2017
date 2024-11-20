@@ -11,7 +11,7 @@ namespace _03GreetingByName
         static void Main(string[] args)
         {
             //Console.Write("Enter yor name: ");
-            var name = Console.ReadLine();
+            string name = Console.ReadLine();
             Console.WriteLine("Hello, {0}!", name);
         }
     }
