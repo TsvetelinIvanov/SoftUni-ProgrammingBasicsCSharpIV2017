@@ -10,11 +10,13 @@ namespace _08TriangleArea
     {
         static void Main(string[] args)
         {
-            var a = double.Parse(Console.ReadLine());
-            var h = double.Parse(Console.ReadLine());
-            var area1 = a * h / 2;
-            var area = Math.Round(area1, 2);
-            Console.WriteLine("Triangle area = " + area);
+            double a = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            
+            double area = a * h / 2;
+            double roundedArea = Math.Round(area, 2);
+            
+            Console.WriteLine("Triangle area = " + roundedArea);
         }
     }
 }
