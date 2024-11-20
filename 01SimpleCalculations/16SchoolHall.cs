@@ -10,13 +10,13 @@ namespace _16SchoolHall
     {
         static void Main(string[] args)
         {
-            var h = double.Parse(Console.ReadLine());
-            var w = double.Parse(Console.ReadLine());
+            double h = double.Parse(Console.ReadLine());
+            double w = double.Parse(Console.ReadLine());
 
-            var row = Math.Floor((h / 1.2));
-            var bureau = Math.Floor((w  - 1) / 0.7);
+            double row = Math.Floor(h / 1.2);
+            double bureau = Math.Floor((w  - 1) / 0.7);
 
-            var place = row * bureau - 3;
+            double place = row * bureau - 3;
 
             Console.WriteLine(place);
         }
