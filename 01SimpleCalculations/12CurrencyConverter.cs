@@ -10,40 +10,42 @@ namespace _12CurrencyConverter
     {
         static void Main(string[] args)
         {
-            var moneyCount = double.Parse(Console.ReadLine());
-            var entryValue = Console.ReadLine();
-            var exitValue = Console.ReadLine();
-            var answer = 0.0;
+            double moneyCount = double.Parse(Console.ReadLine());
+            string entryCurrency = Console.ReadLine();
+            string exitCurrency = Console.ReadLine();
+            double result = 0.0;
 
-            if (entryValue == "USD")
+            if (entryCurrency == "USD")
             {
-                answer = moneyCount * 1.79549;
+                result = moneyCount * 1.79549;
             }
-            else if (entryValue == "EUR")
+            else if (entryCurrency == "EUR")
             {
-                answer = moneyCount * 1.95583;
+                result = moneyCount * 1.95583;
             }
-            else if (entryValue == "GBP")
+            else if (entryCurrency == "GBP")
             {
-                answer = moneyCount * 2.53405;
+                result = moneyCount * 2.53405;
             }
-            else if (entryValue == "BGN")
+            else if (entryCurrency == "BGN")
             {
-                answer = moneyCount;
+                result = moneyCount;
             }
-            if (exitValue == "USD")
+            
+            if (exitCurrency == "USD")
             {
-                answer = answer / 1.79549;
+                result = result / 1.79549;
             }
-            else if (exitValue == "EUR")
+            else if (exitCurrency == "EUR")
             {
-                answer = answer / 1.95583;
+                result = result / 1.95583;
             }
-            else if (exitValue == "GBP")
+            else if (exitCurrency == "GBP")
             {
-                answer /= 2.53405;
+                result = result / 2.53405;
             }
-            Console.WriteLine(Math.Round(answer, 2) + " " + exitValue);
+            
+            Console.WriteLine(Math.Round(result, 2) + " " + exitCurrency);
         }
     }
 }
