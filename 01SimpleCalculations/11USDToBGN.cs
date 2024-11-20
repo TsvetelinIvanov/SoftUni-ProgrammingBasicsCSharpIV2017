@@ -10,8 +10,8 @@ namespace _11USDToBGN
     {
         static void Main(string[] args)
         {
-            var USD = double.Parse(Console.ReadLine());
-            var BGN = Math.Round((USD * 1.79549), 2);
+            double USD = double.Parse(Console.ReadLine());
+            double BGN = Math.Round((USD * 1.79549), 2);
             Console.WriteLine(BGN);
         }
     }
