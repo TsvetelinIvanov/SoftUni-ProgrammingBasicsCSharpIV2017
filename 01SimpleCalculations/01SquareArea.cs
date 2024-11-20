@@ -11,8 +11,9 @@ namespace _01SquareArea
         static void Main(string[] args)
         {
             Console.Write("a = ");
-            var a = int.Parse(Console.ReadLine());
-            var area = a * a;
+            int a = int.Parse(Console.ReadLine());
+            int area = a * a;
+            
             Console.Write("Square = ");
             Console.WriteLine(area);
         }
