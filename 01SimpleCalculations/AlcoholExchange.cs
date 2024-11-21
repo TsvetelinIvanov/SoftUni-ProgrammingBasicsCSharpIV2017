@@ -10,23 +10,22 @@ namespace AlcoholExchange
     {
         static void Main(string[] args)
         {
-            var whiskyPrice = double.Parse(Console.ReadLine());
-            var beerVolume = double.Parse(Console.ReadLine());
-            var wineVolume = double.Parse(Console.ReadLine());
-            var rakiaVolume = double.Parse(Console.ReadLine());
-            var whiskyVolume = double.Parse(Console.ReadLine());
+            double whiskyPrice = double.Parse(Console.ReadLine());
+            double beerVolume = double.Parse(Console.ReadLine());
+            double wineVolume = double.Parse(Console.ReadLine());
+            double rakiaVolume = double.Parse(Console.ReadLine());
+            double whiskyVolume = double.Parse(Console.ReadLine());
 
-            var rakiaPrice = whiskyPrice / 2;
-            var winePrice = rakiaPrice - (rakiaPrice * 0.4);
-            var beerPrice = rakiaPrice - (rakiaPrice * 0.8);
+            double rakiaPrice = whiskyPrice / 2;
+            double winePrice = rakiaPrice - (rakiaPrice * 0.4);
+            double beerPrice = rakiaPrice - (rakiaPrice * 0.8);
 
-            var rakiaSum = rakiaVolume * rakiaPrice;
-            var wineSum = wineVolume * winePrice;
-            var beerSum = beerPrice * beerVolume;
-            var whiskySum = whiskyVolume * whiskyPrice;
+            double rakiaSum = rakiaVolume * rakiaPrice;
+            double wineSum = wineVolume * winePrice;
+            double beerSum = beerVolume * beerPrice;
+            double whiskySum = whiskyVolume * whiskyPrice;
 
             double alcoholSum = rakiaSum + wineSum + beerSum + whiskySum;
-
             Console.WriteLine("{0:f2}", alcoholSum);
         }
     }
