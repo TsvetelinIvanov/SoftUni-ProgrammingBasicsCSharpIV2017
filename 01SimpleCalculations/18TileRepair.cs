@@ -10,17 +10,17 @@ namespace _18TileRepair
     {
         static void Main(string[] args)
         {
-            var N = double.Parse(Console.ReadLine());
-            var W = double.Parse(Console.ReadLine());
-            var L = double.Parse(Console.ReadLine());
-            var M = double.Parse(Console.ReadLine());
-            var O = double.Parse(Console.ReadLine());
+            double N = double.Parse(Console.ReadLine());
+            double W = double.Parse(Console.ReadLine());
+            double L = double.Parse(Console.ReadLine());
+            double M = double.Parse(Console.ReadLine());
+            double O = double.Parse(Console.ReadLine());
 
-            var area = (N * N) - (M * O);
-            var tile = W * L;
+            double area = (N * N) - (M * O);
+            double tile = W * L;
 
-            var tiles = area / tile;
-            var time = tiles * 0.2;
+            double tiles = area / tile;
+            double time = tiles * 0.2;
 
             Console.WriteLine(tiles);
             Console.WriteLine(time);
