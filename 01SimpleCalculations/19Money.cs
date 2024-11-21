@@ -10,16 +10,16 @@ namespace _19Money
     {
         static void Main(string[] args)
         {
-            var bitcoin = int.Parse(Console.ReadLine());
-            var CNY = double.Parse(Console.ReadLine());
-            var percentage = double.Parse(Console.ReadLine());
+            int bitcoin = int.Parse(Console.ReadLine());
+            double CNY = double.Parse(Console.ReadLine());
+            double percentage = double.Parse(Console.ReadLine());
 
-            var BGN = bitcoin * 1168;
-            var USD = (CNY * 0.15) * 1.76;
-            var EUR = (BGN + USD) / 1.95;
+            int BGN = bitcoin * 1168;
+            double USD = (CNY * 0.15) * 1.76;
+            double EUR = (BGN + USD) / 1.95;
 
-            var commission = (EUR / 100) * percentage;
-            var money = EUR - commission;
+            double commission = (EUR / 100) * percentage;
+            double money = EUR - commission;
 
             Console.WriteLine(money);
         }
