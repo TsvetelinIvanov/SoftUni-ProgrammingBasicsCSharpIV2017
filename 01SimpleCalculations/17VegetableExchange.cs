@@ -10,12 +10,12 @@ namespace _17VegetableExchange
     {
         static void Main(string[] args)
         {
-            var vegetablePrice = double.Parse(Console.ReadLine());
-            var fruitPrice = double.Parse(Console.ReadLine());
-            var vegetableWeight = int.Parse(Console.ReadLine());
-            var fruitWeight = int.Parse(Console.ReadLine());
+            double vegetablePrice = double.Parse(Console.ReadLine());
+            double fruitPrice = double.Parse(Console.ReadLine());
+            int vegetableWeight = int.Parse(Console.ReadLine());
+            int fruitWeight = int.Parse(Console.ReadLine());
 
-            var benefit = ((vegetablePrice * vegetableWeight) + (fruitPrice * fruitWeight)) / 1.94;
+            double benefit = ((vegetablePrice * vegetableWeight) + (fruitPrice * fruitWeight)) / 1.94;
 
             Console.WriteLine(benefit);
         }
