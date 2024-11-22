@@ -10,7 +10,7 @@ namespace _05NumbersToText
     {
         static void Main(string[] args)
         {
-            var number = int.Parse(Console.ReadLine());
+            int number = int.Parse(Console.ReadLine());
             if (number == 0)
             {
                 Console.WriteLine("zero");
