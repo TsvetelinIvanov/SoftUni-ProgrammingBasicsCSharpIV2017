@@ -10,9 +10,9 @@ namespace _03EvenOrOdd
     {
         static void Main(string[] args)
         {
-            var number = double.Parse(Console.ReadLine());
-            var quantity = number % 2;
-            if (quantity == 0)
+            double number = double.Parse(Console.ReadLine());
+            double remainder = number % 2;
+            if (remainder == 0)
             {
                 Console.WriteLine("even");
             }
