@@ -24,10 +24,12 @@ namespace _06BonusScore
             {
                 bonus = number * 0.1;
             }
+            
             if (number % 2 == 0)
             {
                 bonus += 1;
             }
+            
             if (number % 10 == 5)
             {
                 bonus += 2;
