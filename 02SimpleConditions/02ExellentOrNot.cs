@@ -10,7 +10,7 @@ namespace _02ExcellentOrNot
     {
         static void Main(string[] args)
         {
-            var grade = double.Parse(Console.ReadLine());
+            double grade = double.Parse(Console.ReadLine());
             if (grade >= 5.50)
             {
                 Console.WriteLine("Excellent!");
@@ -19,7 +19,6 @@ namespace _02ExcellentOrNot
             {
                 Console.WriteLine("Not excellent.");
             }
-
         }
     }
 }
