@@ -11,8 +11,8 @@ namespace _04GreaterNumber
         static void Main(string[] args)
         {
             Console.WriteLine("Enter two integers:");
-            var num1 = int.Parse(Console.ReadLine());
-            var num2 = int.Parse(Console.ReadLine());
+            int num1 = int.Parse(Console.ReadLine());
+            int num2 = int.Parse(Console.ReadLine());
             if (num1 > num2)
             {
                 Console.WriteLine("Greater number:" + num1);
