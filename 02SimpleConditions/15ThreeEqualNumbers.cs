@@ -10,10 +10,10 @@ namespace _15ThreeEqualNumbers
     {
         static void Main(string[] args)
         {
-            var a = double.Parse(Console.ReadLine());
-            var b = double.Parse(Console.ReadLine());
-            var c = double.Parse(Console.ReadLine());
-            if (a == b && b== c)
+            double a = double.Parse(Console.ReadLine());
+            double b = double.Parse(Console.ReadLine());
+            double c = double.Parse(Console.ReadLine());
+            if (a == b && b == c)
             {
                 Console.WriteLine("yes");
             }
