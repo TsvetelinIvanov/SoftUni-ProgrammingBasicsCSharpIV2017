@@ -18,10 +18,12 @@ namespace _14Add15Minutes
                 hour += 1;
                 futureMinute -= 60;
             }
+            
             if (hour > 23)
             {
                 hour = 0;
             }
+            
             Console.WriteLine(hour + ":" + "{0:00}", futureMinute);
         }
     }
