@@ -10,7 +10,7 @@ namespace _12SpeedInfo
     {
         static void Main(string[] args)
         {
-            var speed = double.Parse(Console.ReadLine());
+            double speed = double.Parse(Console.ReadLine());
             if (speed <= 10)
             {
                 Console.WriteLine("slow");
