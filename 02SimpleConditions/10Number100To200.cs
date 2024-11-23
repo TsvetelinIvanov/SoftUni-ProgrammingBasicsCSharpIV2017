@@ -22,8 +22,7 @@ namespace _10Number100To200
             else if (a >= 100 || a <= 200)
             {
                 Console.WriteLine("Between 100 and 200");
-            }
-            
+            }            
         }
     }
 }
