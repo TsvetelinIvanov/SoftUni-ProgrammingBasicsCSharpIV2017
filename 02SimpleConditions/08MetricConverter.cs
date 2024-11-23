@@ -10,74 +10,74 @@ namespace _08MetricConverter
     {
         static void Main(string[] args)
         {
-            var meterCount = double.Parse(Console.ReadLine());
-            var entryValue = Console.ReadLine();
-            var exitValue = Console.ReadLine();
-            var answer = 0.0;
+            double metersCount = double.Parse(Console.ReadLine());
+            string entryMagnitude = Console.ReadLine();
+            string exitMagnitude = Console.ReadLine();
+            double result = 0.0;
 
-            if (entryValue == "mm")
+            if (entryMagnitude == "mm")
             {
-                answer = meterCount / 1000;
+                result = metersCount / 1000;
             }
-            else if (entryValue == "cm")
+            else if (entryMagnitude == "cm")
             {
-                answer = meterCount / 100;
+                result = metersCount / 100;
             }
-            else if (entryValue == "mi")
+            else if (entryMagnitude == "mi")
             {
-                answer = meterCount / 0.000621371192;
+                result = metersCount / 0.000621371192;
             }
-            else if (entryValue == "in")
+            else if (entryMagnitude == "in")
             {
-                answer = meterCount / 39.3700787;
+                result = metersCount / 39.3700787;
             }
-            else if (entryValue == "km")
+            else if (entryMagnitude == "km")
             {
-                answer = meterCount / 0.001;
+                result = metersCount / 0.001;
             }
-            else if (entryValue == "ft")
+            else if (entryMagnitude == "ft")
             {
-                answer = meterCount / 3.2808399;
+                result = metersCount / 3.2808399;
             }
-            else if (entryValue == "yd")
+            else if (entryMagnitude == "yd")
             {
-                answer = meterCount / 1.0936133;
+                result = metersCount / 1.0936133;
             }
-            else if (entryValue == "m")
+            else if (entryMagnitude == "m")
             {
-                answer = meterCount;
+                result = metersCount;
             }
             
-            if (exitValue == "mm")
+            if (exitMagnitude == "mm")
             {
-                answer *= 1000;
+                result *= 1000;
             }
-            else if (exitValue == "cm")
+            else if (exitMagnitude == "cm")
             {
-                answer *= 100;
+                result *= 100;
             }
-            else if (exitValue == "mi")
+            else if (exitMagnitude == "mi")
             {
-                answer *= 0.000621371192;
+                result *= 0.000621371192;
             }
-            else if (exitValue == "in")
+            else if (exitMagnitude == "in")
             {
-                answer *= 39.3700787;
+                result *= 39.3700787;
             }
-            else if (exitValue == "km")
+            else if (exitMagnitude == "km")
             {
-                answer *= 0.001;
+                result *= 0.001;
             }
-            else if (exitValue == "ft")
+            else if (exitMagnitude == "ft")
             {
-                answer *= 3.2808399;
+                result *= 3.2808399;
             }
-            else if (exitValue == "yd")
+            else if (exitMagnitude == "yd")
             {
-                answer *= 1.0936133;
+                result *= 1.0936133;
             }
 
-            Console.WriteLine(answer + " " + exitValue);
+            Console.WriteLine(result + " " + exitMagnitude);
         }
     }
 }
