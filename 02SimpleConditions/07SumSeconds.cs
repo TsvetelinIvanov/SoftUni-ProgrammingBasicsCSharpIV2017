@@ -14,7 +14,7 @@ namespace _07SumSeconds
             int time2 = int.Parse(Console.ReadLine());
             int time3 = int.Parse(Console.ReadLine());
 
-            int sumTime = time1 + time2 + time3;
+            int timeSum = time1 + time2 + time3;
             int minutes = sumTime / 60;
             int seconds = sumTime % 60;
 
