@@ -10,16 +10,16 @@ namespace _16Number1_100ToText
     {
         static void Main(string[] args)
         {
-            var number = int.Parse(Console.ReadLine());
-            var firstNumber = number / 10;
-            var secondNumber = number % 10;
-            var bothNumber = number;
+            int number = int.Parse(Console.ReadLine());
+            int firstDigit = number / 10;
+            int secondDigit = number % 10;
+            int bothDigits = number;
 
             string firstWord = "";
             string secondWord = "";
-            string bothWord = "";
+            string bothWords = "";
 
-            switch (secondNumber)
+            switch (secondDigit)
             {
                 case 0: secondWord = "zero"; break;
                 case 1: secondWord = "one"; break;
@@ -33,7 +33,8 @@ namespace _16Number1_100ToText
                 case 9: secondWord = "nine"; break;
                 default: break;
             }
-            switch (firstNumber)
+            
+            switch (firstDigit)
             {
                 case 2: firstWord = "twenty"; break;
                 case 3: firstWord = "thirty"; break;
@@ -45,27 +46,29 @@ namespace _16Number1_100ToText
                 case 9: firstWord = "ninety"; break;
                 default: break;
             }
-            switch (bothNumber)
+            
+            switch (bothDigits)
             {
-                case 10: bothWord = "ten"; break;
-                case 11: bothWord = "eleven"; break;
-                case 12: bothWord = "twelve"; break;
-                case 13: bothWord = "thirteen"; break;
-                case 14: bothWord = "fourteen"; break;
-                case 15: bothWord = "fifteen"; break;
-                case 16: bothWord = "sixteen"; break;
-                case 17: bothWord = "seventeen"; break;
-                case 18: bothWord = "eighteen"; break;
-                case 19: bothWord = "nineteen"; break;
+                case 10: bothWords = "ten"; break;
+                case 11: bothWords = "eleven"; break;
+                case 12: bothWords = "twelve"; break;
+                case 13: bothWords = "thirteen"; break;
+                case 14: bothWords = "fourteen"; break;
+                case 15: bothWords = "fifteen"; break;
+                case 16: bothWords = "sixteen"; break;
+                case 17: bothWords = "seventeen"; break;
+                case 18: bothWords = "eighteen"; break;
+                case 19: bothWords = "nineteen"; break;
                 default: break;
             }
+            
             if (number >= 0 && number <= 9)
             {
                 Console.WriteLine(secondWord);
             }
             else if (number >= 10 && number <= 19)
             {
-                Console.WriteLine(bothWord);
+                Console.WriteLine(bothWords);
             }
             else if (number >=20 && number <= 100)
             {
@@ -84,7 +87,7 @@ namespace _16Number1_100ToText
             }
             else
             {
-                Console.WriteLine("invalid number");
+                Console.WriteLine("Invalid number!");
             }
         }
     }
