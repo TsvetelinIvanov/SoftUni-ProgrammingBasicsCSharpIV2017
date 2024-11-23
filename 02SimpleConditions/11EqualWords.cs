@@ -10,12 +10,11 @@ namespace _11EqualWords
     {
         static void Main(string[] args)
         {
-            var word1 = Console.ReadLine();
-            var word2 = Console.ReadLine();
+            string word1 = Console.ReadLine();
+            string word2 = Console.ReadLine();
 
             word1 = word1.ToLower();
             word2 = word2.ToLower();
-
             if (word1 == word2)
             {
                 Console.WriteLine("yes");
