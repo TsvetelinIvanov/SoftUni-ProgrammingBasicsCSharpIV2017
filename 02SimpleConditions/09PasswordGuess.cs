@@ -10,7 +10,7 @@ namespace _09PasswordGuess
     {
         static void Main(string[] args)
         {
-            var password = Console.ReadLine();
+            string password = Console.ReadLine();
             if (password == "s3cr3t!P@ssw0rd")
             {
                 Console.WriteLine("Welcome");
