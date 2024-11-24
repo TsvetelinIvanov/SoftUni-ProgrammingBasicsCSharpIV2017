@@ -8,6 +8,7 @@ class _19_PipesInPool
         double P1 = double.Parse(Console.ReadLine());
         double P2 = double.Parse(Console.ReadLine());
         double H = double.Parse(Console.ReadLine());
+        
         double waterP1 = P1 * H;
         double waterP2 = P2 * H;
         double water = waterP1 + waterP2;
