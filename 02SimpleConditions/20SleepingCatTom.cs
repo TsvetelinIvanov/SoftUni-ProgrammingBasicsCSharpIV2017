@@ -11,9 +11,9 @@ namespace _20SleepingCatTom
         static void Main(string[] args)
         {
             int holiday = int.Parse(Console.ReadLine());
-            var holidayPlay = holiday * 127;
-            var workdayPlay = (365 - holiday) * 63;
-            var play = holidayPlay + workdayPlay;
+            int holidayPlay = holiday * 127;
+            int workdayPlay = (365 - holiday) * 63;
+            int play = holidayPlay + workdayPlay;
             int toPlay = Math.Abs(play - 30000);
             int hours = toPlay / 60;
             int minutes = toPlay % 60;
