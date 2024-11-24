@@ -14,19 +14,19 @@ namespace _21WineHarvest
             double Y = double.Parse(Console.ReadLine());
             int Z = int.Parse(Console.ReadLine());
             int W = int.Parse(Console.ReadLine());
-            var grapes = X * Y;
-            var wine = (0.4 * grapes) / 2.5;
-            var differenceWine = Math.Abs(wine - Z);
+            
+            double grapes = X * Y;
+            double wine = (0.4 * grapes) / 2.5;
+            double differenceWine = Math.Abs(wine - Z);
             if (wine < Z)
             {
                 Console.WriteLine("It will be a tough winter! More {0} liters wine needed.", Math.Floor(differenceWine));
             }
             else
             {
-                var winePerW = differenceWine / W;
+                double winePerW = differenceWine / W;
                 Console.WriteLine("Good harvest this year! Total wine: {0} liters.", Math.Floor(wine));
-                Console.WriteLine("{0} liters left -> {1} liters per person.",
-                    Math.Ceiling(differenceWine), Math.Ceiling(winePerW));
+                Console.WriteLine("{0} liters left -> {1} liters per person.", Math.Ceiling(differenceWine), Math.Ceiling(winePerW));
             }
         }
     }
