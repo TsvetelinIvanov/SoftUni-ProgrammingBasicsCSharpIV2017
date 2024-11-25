@@ -10,15 +10,15 @@ namespace _03_PointInRectangle
     {
         static void Main(string[] args)
         {
-            var x1 = double.Parse(Console.ReadLine());
-            var y1 = double.Parse(Console.ReadLine());
-            var x2 = double.Parse(Console.ReadLine());
-            var y2 = double.Parse(Console.ReadLine());
-            var x = double.Parse(Console.ReadLine());
-            var y = double.Parse(Console.ReadLine());
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
+            double y = double.Parse(Console.ReadLine());
+            
             bool checkX = (x >= x1) && (x <= x2);
             bool checkY = (y >= y1) && (y <= y2);
-
             if (checkX && checkY)
             {
                 Console.WriteLine("Inside");
