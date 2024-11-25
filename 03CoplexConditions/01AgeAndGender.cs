@@ -10,8 +10,8 @@ namespace _01AgeAndGender
     {
         static void Main(string[] args)
         {
-            var age = double.Parse(Console.ReadLine());
-            var gender = Console.ReadLine();
+            double age = double.Parse(Console.ReadLine());
+            string gender = Console.ReadLine();
 
             if (age < 16)
             {
