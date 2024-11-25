@@ -10,9 +10,9 @@ namespace _02SmallShop
     {
         static void Main(string[] args)
         {
-            var product = Console.ReadLine().ToLower();
-            var town = Console.ReadLine().ToLower();
-            var quantity = double.Parse(Console.ReadLine());
+            string product = Console.ReadLine().ToLower();
+            string town = Console.ReadLine().ToLower();
+            double quantity = double.Parse(Console.ReadLine());
             if (town == "sofia")
             {
                 if (product == "coffee") Console.WriteLine(quantity * 0.50);
