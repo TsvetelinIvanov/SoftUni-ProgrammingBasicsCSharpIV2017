@@ -10,9 +10,8 @@ namespace _04FruitOrVegetable
     {
         static void Main(string[] args)
         {
-            var thing = Console.ReadLine();
-            if (thing == "banana" || thing == "apple" || thing == "kiwi" || thing == "cherry" ||
-                thing == "lemon" || thing == "grapes")
+            string thing = Console.ReadLine();
+            if (thing == "banana" || thing == "apple" || thing == "kiwi" || thing == "cherry" || thing == "lemon" || thing == "grapes")
             {
                 Console.WriteLine("fruit");
             }
