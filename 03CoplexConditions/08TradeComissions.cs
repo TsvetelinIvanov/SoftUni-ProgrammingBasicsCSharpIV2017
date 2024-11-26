@@ -10,7 +10,7 @@ namespace _08TradeComissions
     {
         static void Main(string[] args)
         {
-            var town = Console.ReadLine().ToLower();
+            string town = Console.ReadLine().ToLower();
             double quontity = double.Parse(Console.ReadLine());
             double comission = -1.0;
             if (town == "sofia")
