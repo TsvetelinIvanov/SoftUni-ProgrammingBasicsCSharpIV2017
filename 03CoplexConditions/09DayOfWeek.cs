@@ -10,7 +10,7 @@ namespace _09DayOfWeek
     {
         static void Main(string[] args)
         {
-            var day = int.Parse(Console.ReadLine());
+            int day = int.Parse(Console.ReadLine());
             switch (day)
             {
                 case 1: Console.WriteLine("Monday"); break;
