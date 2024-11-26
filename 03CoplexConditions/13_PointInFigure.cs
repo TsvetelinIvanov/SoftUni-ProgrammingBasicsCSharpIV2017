@@ -16,14 +16,14 @@ namespace _13_PointInFigure
             int x2 = h * 2;
             int x3 = h * 3;
             int y4 = h * 4;
-            bool inFigure = ((x > 0) && (x < x3) && (y > 0) && (y < h)) || ((x > h) && (x < x2) && (y >= h) && (y < y4));
-            bool outFigure = (((x == 0 || x == x3) && (y >= 0 && y <= h)) || ((y == 0 || (y == h && (x < h || x > x2))) && (x >= 0 && x <= x3))) ||
+            bool insideFigure = ((x > 0) && (x < x3) && (y > 0) && (y < h)) || ((x > h) && (x < x2) && (y >= h) && (y < y4));
+            bool onTheBorderOfTheFigure = (((x == 0 || x == x3) && (y >= 0 && y <= h)) || ((y == 0 || (y == h && (x < h || x > x2))) && (x >= 0 && x <= x3))) ||
                 (((x == h || x == x2) && (y >= h && y <= y4)) || ((y == y4) && (x >= h && x <= x2)));
-            if (inFigure)
+            if (insideFigure)
             {
                 Console.WriteLine("inside");
             }
-            else if (outFigure)
+            else if (onTheBorderOfTheFigure)
             {
                 Console.WriteLine("border");
             }
