@@ -23,8 +23,6 @@ namespace PointOnRectangleBorder3D
             bool checkX = (x == x1 || x == x2) && (y >= y1 && y <= y2) && (z >= z1 && z <= z2);
             bool checkY = (y == y1 || y == y2) && (x >= x1 && x <= x2) && (z >= z1 && z <= z2);
             bool checkZ = (z == z1 || z == z2) && (x >= x1 && x <= x2) && (y >= y1 && y <= y2);
-
-
             if (checkX || checkY || checkZ)
             {
                 Console.WriteLine("Border");
