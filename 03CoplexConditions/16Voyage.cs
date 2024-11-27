@@ -11,21 +11,20 @@ namespace _16Voyage
         static void Main(string[] args)
         {
             double budget = double.Parse(Console.ReadLine());
-            var season = Console.ReadLine();
-            var spendedMoney = 0.0;
-
+            string season = Console.ReadLine();
+            double spentMoney = 0.0;
             if (budget <= 100) 
             {
                 Console.WriteLine("Somewhere in Bulgaria");
                 if (season == "summer")
                 {
-                    spendedMoney = budget * 0.3;
-                    Console.WriteLine("Camp - {0:f2}", spendedMoney);
+                    spentMoney = budget * 0.3;
+                    Console.WriteLine("Camp - {0:f2}", spentMoney);
                 }
                 else if (season == "winter")
                 {
-                    spendedMoney = budget * 0.7;
-                    Console.WriteLine("Hotel - {0:f2}", spendedMoney);
+                    spentMoney = budget * 0.7;
+                    Console.WriteLine("Hotel - {0:f2}", spentMoney);
                 }
             }
             else if (budget <= 1000) 
@@ -33,20 +32,20 @@ namespace _16Voyage
                 Console.WriteLine("Somewhere in Balkans");
                 if (season == "summer")
                 {
-                    spendedMoney = budget * 0.4;
-                    Console.WriteLine("Camp - {0:f2}", spendedMoney);
+                    spentMoney = budget * 0.4;
+                    Console.WriteLine("Camp - {0:f2}", spentMoney);
                 }
                 else if (season == "winter")
                 {
-                    spendedMoney = budget * 0.8;
-                    Console.WriteLine("Hotel - {0:f2}", spendedMoney);
+                    spentMoney = budget * 0.8;
+                    Console.WriteLine("Hotel - {0:f2}", spentMoney);
                 }
             }
             else if (budget > 1000) 
             {
                 Console.WriteLine("Somewhere in Europe");
-                spendedMoney = budget * 0.9;
-                Console.WriteLine("Hotel - {0:f2}", spendedMoney);                
+                spentMoney = budget * 0.9;
+                Console.WriteLine("Hotel - {0:f2}", spentMoney);                
             }
         }
     }
