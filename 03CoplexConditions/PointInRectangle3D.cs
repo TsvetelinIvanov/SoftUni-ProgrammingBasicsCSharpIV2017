@@ -10,19 +10,19 @@ namespace PointInRectangle3D
     {
         static void Main(string[] args)
         {
-            var x1 = double.Parse(Console.ReadLine());
-            var y1 = double.Parse(Console.ReadLine());
-            var z1 = double.Parse(Console.ReadLine());
-            var x2 = double.Parse(Console.ReadLine());
-            var y2 = double.Parse(Console.ReadLine());            
-            var z2 = double.Parse(Console.ReadLine());
-            var x = double.Parse(Console.ReadLine());
-            var y = double.Parse(Console.ReadLine());
-            var z = double.Parse(Console.ReadLine());
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
+            double z1 = double.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());            
+            double z2 = double.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
+            double y = double.Parse(Console.ReadLine());
+            double z = double.Parse(Console.ReadLine());
+            
             bool checkX = (x >= x1) && (x <= x2);
             bool checkY = (y >= y1) && (y <= y2);
             bool checkZ = (z >= z1) && (z <= z2);
-
             if (checkX && checkY && checkZ)
             {
                 Console.WriteLine("Inside");
