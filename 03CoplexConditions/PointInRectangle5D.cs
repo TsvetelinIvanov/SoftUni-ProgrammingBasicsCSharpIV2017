@@ -10,28 +10,27 @@ namespace PointInRectangle5D
     {
         static void Main(string[] args)
         {
-            var x1 = double.Parse(Console.ReadLine());
-            var y1 = double.Parse(Console.ReadLine());
-            var z1 = double.Parse(Console.ReadLine());
-            var v1 = double.Parse(Console.ReadLine());
-            var w1 = double.Parse(Console.ReadLine());
-            var x2 = double.Parse(Console.ReadLine());
-            var y2 = double.Parse(Console.ReadLine());
-            var z2 = double.Parse(Console.ReadLine());
-            var v2 = double.Parse(Console.ReadLine());
-            var w2 = double.Parse(Console.ReadLine());
-            var x = double.Parse(Console.ReadLine());
-            var y = double.Parse(Console.ReadLine());
-            var z = double.Parse(Console.ReadLine());
-            var v = double.Parse(Console.ReadLine());
-            var w = double.Parse(Console.ReadLine());
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
+            double z1 = double.Parse(Console.ReadLine());
+            double v1 = double.Parse(Console.ReadLine());
+            double w1 = double.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());
+            double z2 = double.Parse(Console.ReadLine());
+            double v2 = double.Parse(Console.ReadLine());
+            double w2 = double.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
+            double y = double.Parse(Console.ReadLine());
+            double z = double.Parse(Console.ReadLine());
+            double v = double.Parse(Console.ReadLine());
+            double w = double.Parse(Console.ReadLine());
 
             bool checkX = (x >= x1) && (x <= x2);
             bool checkY = (y >= y1) && (y <= y2);
             bool checkZ = (z >= z1) && (z <= z2);
             bool checkV = (v >= v1) && (v <= v2);
             bool checkW = (w >= w1) && (w <= w2);
-
             if (checkX && checkY && checkZ && checkV && checkW)
             {
                 Console.WriteLine("Inside");
