@@ -10,36 +10,57 @@ namespace _19HotelRoom
     {
         static void Main(string[] args)
         {
-            var month = Console.ReadLine();
-            int night = int.Parse(Console.ReadLine());
+            string month = Console.ReadLine();
+            int nightsCount = int.Parse(Console.ReadLine());
                       
-            double apartment = 0.0;
-            double studio = 0.0;
+            double apartmentIncome = 0.0;
+            double studioIncome = 0.0;
 
             if (month == "May" || month == "October")
             {
-                apartment = night * 65;
-                if (night > 14) { apartment -= (apartment * 0.1); }
-                studio = night * 50;
-                if (night > 14) { studio -= (studio * 0.3); }
-                else if (night > 7) { studio -= (studio * 0.05); }
+                apartmentIncome = nightsCount * 65;
+                if (nightsCount > 14)
+                {
+                    apartmentIncome -= (apartmentIncome * 0.1);
+                }
+                
+                studioIncome = nightsCount * 50;
+                if (nightsCount > 14)
+                {
+                    studioIncome -= (studioIncome * 0.3);
+                }
+                else if (nightsCount > 7)
+                {
+                    studioIncome -= (studioIncome * 0.05);
+                }
             }
             else if (month == "June" || month == "September")
             {
-                apartment = night * 68.70;
-                if (night > 14) { apartment -= (apartment * 0.1); }
-                studio = night * 75.20;
-                if (night > 14) { studio -= (studio * 0.2); }
+                apartmentIncome = nightsCount * 68.70;
+                if (nightsCount > 14)
+                {
+                    apartmentIncome -= (apartmentIncome * 0.1);
+                }
+                
+                studioIncome = nightsCount * 75.20;
+                if (nightsCount > 14)
+                {
+                    studioIncome -= (studioIncome * 0.2);
+                }
             }
             else if (month == "July" || month == "August")
             {
-                apartment = night * 77;
-                if (night > 14) { apartment -= (apartment * 0.1); }
-                studio = night * 76;                                
+                apartmentIncome = nightsCount * 77;
+                if (nightsCount > 14)
+                {
+                    apartmentIncome -= (apartmentIncome * 0.1);
+                }
+                
+                studioIncome = nightsCount * 76;                                
             }
             
-            Console.WriteLine("Apartment: {0:f2} lv.", apartment);
-            Console.WriteLine("Studio: {0:f2} lv.", studio);
+            Console.WriteLine("Apartment: {0:f2} lv.", apartmentIncome);
+            Console.WriteLine("Studio: {0:f2} lv.", studioIncome);
         }
     }
 }
