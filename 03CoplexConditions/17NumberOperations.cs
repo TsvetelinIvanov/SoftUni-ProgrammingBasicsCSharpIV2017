@@ -10,40 +10,75 @@ namespace _17NumberOperations
     {
         static void Main(string[] args)
         {
-            double n1 = double.Parse(Console.ReadLine());
-            double n2 = double.Parse(Console.ReadLine());
-            char oper = char.Parse(Console.ReadLine());
+            double number1 = double.Parse(Console.ReadLine());
+            double number2 = double.Parse(Console.ReadLine());
+            char sign = char.Parse(Console.ReadLine());
             double result = 0.0;
-            switch (oper)
+            switch (sign)
             {
-                case '+': result = n1 + n2; Console.Write("{0} + {1} = {2} - ", n1, n2, result);
-                    if (result % 2 == 0) { Console.WriteLine("even"); } else { Console.WriteLine("odd"); } break;
-                case '-': result = n1 - n2; Console.Write("{0} - {1} = {2} - ", n1, n2, result); 
-                    if (result % 2 == 0) {Console.WriteLine("even"); } else {Console.WriteLine("odd"); } break;
-                case '*': result = n1 * n2; Console.Write("{0} * {1} = {2} - ", n1, n2, result); 
-                    if (result % 2 == 0) {Console.WriteLine("even"); } else {Console.WriteLine("odd"); } break;                
+                case '+':
+                    result = number1 + number2;
+                    Console.Write("{0} + {1} = {2} - ", number1, number2, result);
+                    if (result % 2 == 0)
+                    {
+                        Console.WriteLine("even"); 
+                    }
+                    else
+                    {
+                        Console.WriteLine("odd");
+                    }
+                    
+                    break;
+                case '-':
+                    result = number1 - number2;
+                    Console.Write("{0} - {1} = {2} - ", number1, number2, result); 
+                    if (result % 2 == 0)
+                    {
+                        Console.WriteLine("even");
+                    }
+                    else
+                    {
+                        Console.WriteLine("odd");
+                    }
+                    
+                    break;
+                case '*':
+                    result = number1 * number2;
+                    Console.Write("{0} * {1} = {2} - ", number1, number2, result); 
+                    if (result % 2 == 0)
+                    {
+                        Console.WriteLine("even");
+                    }
+                    else
+                    {
+                        Console.WriteLine("odd");
+                    }
+                    
+                    break;                
             }
             
-            if (oper == '/')
+            if (sign == '/')
             {
-                if (n2 == 0)
+                if (number2 == 0)
                 {
-                    Console.WriteLine("Cannot divide {0} by zero", n1);
+                    Console.WriteLine("Cannot divide {0} by zero", number1);
                 }
                 else
                 {
-                    result = n1 / n2; Console.WriteLine("{0} / {1} = {2:f2}", n1, n2, result);
+                    result = number1 / number2;
+                    Console.WriteLine("{0} / {1} = {2:f2}", number1, number2, result);
                 }
             }
-            else if (oper == '%')
+            else if (sign == '%')
             {
-                if (n2 == 0)
+                if (number2 == 0)
                 {
-                    Console.WriteLine("Cannot divide {0} by zero", n1);
+                    Console.WriteLine("Cannot divide {0} by zero", number1);
                 }
                 else
                 {
-                    result = n1 % n2; Console.WriteLine("{0} % {1} = {2}", n1, n2, result);
+                    result = number1 % number2;
+                    Console.WriteLine("{0} % {1} = {2}", n1, n2, result);
                 }
             }            
         }
