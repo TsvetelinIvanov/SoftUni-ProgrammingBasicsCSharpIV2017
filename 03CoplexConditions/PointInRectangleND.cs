@@ -13,27 +13,32 @@ namespace PointInRectangleND
             int n = int.Parse(Console.ReadLine());
             if (n <= 0)
             {
-                Console.WriteLine("No able dimension!");
+                Console.WriteLine("The dimensions' count must be a positive number!");
             }
             else
             {
-                bool checkn = true;
+                bool checkNs = true;
                 for (int i = 0; i < n; i++)
                 {
                     int n1 = int.Parse(Console.ReadLine());
                     int n2 = int.Parse(Console.ReadLine());
                     int nPoint = int.Parse(Console.ReadLine());
-                    if (n1 > n2) Console.WriteLine("This is no N-dimensional rectangle!");
-                    bool checkN = (nPoint >= n1) && (nPoint <= n2);
-                    if (checkN)
+                    if (n1 > n2)
                     {
+                        Console.WriteLine("The first number cannot be greater than second number!");
+
+                        return;
                     }
-                    else
+                    
+                    bool checkN = (nPoint >= n1) && (nPoint <= n2);
+                    if (!checkN)
                     {
-                        checkn = false; break;
+                        checkNs = false;
+                        break;
                     }
                 }
-                if (checkn)
+                
+                if (checkNs)
                 {
                     Console.WriteLine("Inside");
                 }
