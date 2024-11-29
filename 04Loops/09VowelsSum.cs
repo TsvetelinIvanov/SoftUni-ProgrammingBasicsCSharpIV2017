@@ -16,14 +16,25 @@ namespace _09VowelsSum
             {                
                 switch (text[i])
                 {
-                    case 'a': sum += 1; break;
-                    case 'e': sum += 2; break;
-                    case 'i': sum += 3; break;
-                    case 'o': sum += 4; break;
-                    case 'u': sum += 5; break;
+                    case 'a':
+                        sum += 1;
+                        break;
+                    case 'e':
+                        sum += 2;
+                        break;
+                    case 'i':
+                        sum += 3;
+                        break;
+                    case 'o':
+                        sum += 4;
+                        break;
+                    case 'u':
+                        sum += 5;
+                        break;
                 }
             }
-                Console.WriteLine(sum);
+            
+            Console.WriteLine(sum);
         }
     }
 }
