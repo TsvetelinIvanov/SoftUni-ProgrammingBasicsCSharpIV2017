@@ -10,8 +10,7 @@ namespace _07LeftAndRightSum
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            
+            int n = int.Parse(Console.ReadLine());            
             int leftSum = 0;            
             for (int i = 0; i < n; i++)
             {
