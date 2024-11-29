@@ -13,13 +13,12 @@ namespace _12EqualPairs
             int n = int.Parse(Console.ReadLine());
             double previousPair = 0;
             double currentPair = 0;
-            double diffence = 0;
+            double difference = 0;
             double biggestDifference = 0;
             for (int i = 0; i < n; i++)
             {
                 double a = double.Parse(Console.ReadLine());
                 double b = double.Parse(Console.ReadLine());
-
                 if (i == 0)
                 {
                     previousPair = a + b;
@@ -27,8 +26,12 @@ namespace _12EqualPairs
                 else
                 {
                     currentPair = a + b;
-                    diffence = Math.Abs(currentPair - previousPair);
-                    if (diffence > biggestDifference) { biggestDifference = diffence; }
+                    difference = Math.Abs(currentPair - previousPair);
+                    if (difference > biggestDifference)
+                    {
+                        biggestDifference = difference;
+                    }
+                    
                     previousPair = currentPair;
                 }
             }
