@@ -12,18 +12,17 @@ namespace _08EvenOrOddSum
         {
             int n = int.Parse(Console.ReadLine());           
             int oddSum = 0;
-            int evenSum = 0;
-            
+            int evenSum = 0;            
             for (int i = 0; i < n; i++)
             {     
                 int currentNumber = int.Parse(Console.ReadLine());
                 if (i % 2 == 0)
                 {
-                    oddSum += currentNumber;
+                    evenSum += currentNumber;
                 }
                 else
                 {
-                    evenSum += currentNumber; 
+                    oddSum += currentNumber; 
                 }      
             }
             
