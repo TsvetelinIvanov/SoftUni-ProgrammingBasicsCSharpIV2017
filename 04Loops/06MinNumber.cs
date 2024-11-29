@@ -15,8 +15,12 @@ namespace _06MinNumber
             for (int i = 1; i < n; i++)
             {
                 int currentNumber = int.Parse(Console.ReadLine());
-                if (currentNumber < min) min = currentNumber;                
+                if (currentNumber < min)
+                {
+                    min = currentNumber;
+                }
             }
+            
             Console.WriteLine(min);
         }
     }
