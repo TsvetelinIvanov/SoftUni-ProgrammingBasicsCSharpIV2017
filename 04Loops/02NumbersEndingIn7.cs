@@ -14,7 +14,7 @@ namespace _02NumbersEndingIn7
             {
                 if (i % 10 == 7)
                 {
-                Console.WriteLine(i);
+                    Console.WriteLine(i);
                 }
             }
         }
