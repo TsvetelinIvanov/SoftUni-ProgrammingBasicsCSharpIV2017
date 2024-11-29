@@ -11,9 +11,11 @@ namespace _11OddOrEvenPosition
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            
             double oddSum = 0.0;
             double oddMin = double.PositiveInfinity;
             double oddMax = double.NegativeInfinity;
+            
             double evenSum = 0.0;
             double evenMin = double.PositiveInfinity;
             double evenMax = double.NegativeInfinity;
@@ -35,16 +37,29 @@ namespace _11OddOrEvenPosition
                     if (i % 2 == 0)
                     {
                         evenSum += m;
-                        if (m < evenMin) { evenMin = m; }
-                        if (m > evenMax) { evenMax = m; }
+                        if (m < evenMin)
+                        {
+                            evenMin = m;
+                        }
+                        
+                        if (m > evenMax)
+                        {
+                            evenMax = m;
+                        }
                     }
                     else
                     {
                         oddSum += m;
-                        if (m < oddMin) { oddMin = m; }
-                        if (m > oddMax) { oddMax = m; }
+                        if (m < oddMin)
+                        {
+                            oddMin = m;
+                        }
+                        
+                        if (m > oddMax)
+                        {
+                            oddMax = m;
+                        }
                     }
-
                 }
                 
                 if (oddSum == 0) 
@@ -54,7 +69,7 @@ namespace _11OddOrEvenPosition
                     Console.WriteLine("OddMax=No,");
                     Console.WriteLine("EvenSum={0},", evenSum);
                     Console.WriteLine("EvenMin={0},", evenMin);
-                    Console.WriteLine("EvenMax=" + evenMax);
+                    Console.WriteLine("EvenMax={0}", evenMax);
                 }
                 else if (evenSum == 0)
                 {
@@ -81,7 +96,7 @@ namespace _11OddOrEvenPosition
                     Console.WriteLine("OddMax={0},", oddMax);
                     Console.WriteLine("EvenSum={0},", evenSum);
                     Console.WriteLine("EvenMin={0},", evenMin);
-                    Console.WriteLine("EvenMax=" + evenMax);
+                    Console.WriteLine("EvenMax={0}", evenMax);
                 }
             }
         }
