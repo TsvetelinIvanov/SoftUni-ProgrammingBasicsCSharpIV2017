@@ -17,6 +17,7 @@ namespace _04SumNumbers
                 int x = int.Parse(Console.ReadLine());
                 sum += x;
             }
+            
             Console.WriteLine(sum);
         }
     }
