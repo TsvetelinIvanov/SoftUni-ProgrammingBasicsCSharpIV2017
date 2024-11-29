@@ -20,6 +20,7 @@ namespace _05MaxNumber
                     max = curentNumber;
                 }                
             }
+            
             Console.WriteLine("max = " + max);
         }
     }
