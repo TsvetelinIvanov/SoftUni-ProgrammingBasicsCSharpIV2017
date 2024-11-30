@@ -11,11 +11,13 @@ namespace _19Histogram
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            
             double count1 = 0;
             double count2 = 0;
             double count3 = 0;
             double count4 = 0;
             double count5 = 0;
+            
             double percent1 = 0;
             double percent2 = 0;
             double percent3 = 0;
@@ -24,8 +26,7 @@ namespace _19Histogram
 
             for (int i = 0; i < n; i++)
             {
-                int m = int.Parse(Console.ReadLine());
-                
+                int m = int.Parse(Console.ReadLine());                
                 if (m >= 1 && m <= 199)
                 {
                     count1 += 1;
