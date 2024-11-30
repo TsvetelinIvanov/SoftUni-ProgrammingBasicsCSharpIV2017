@@ -18,6 +18,7 @@ namespace _05SquareFrame
             }
             
             Console.WriteLine("+");
+            
             for (int i = 1; i <= n - 2; i++)
             {
                 Console.Write("| ");
@@ -25,6 +26,7 @@ namespace _05SquareFrame
                 {
                     Console.Write("- ");
                 }
+                
                 Console.WriteLine("|");
             }
             
