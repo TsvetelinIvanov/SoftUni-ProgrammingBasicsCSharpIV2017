@@ -13,7 +13,8 @@ namespace _22SmartLily
             int age = int.Parse(Console.ReadLine());
             double washingMashinePrice = double.Parse(Console.ReadLine());
             int toyPrice = int.Parse(Console.ReadLine());
-            double toyCount = 0;
+            
+            double toysCount = 0;
             double birthdayMoney = 0;
             double birthdayMoneySum = 0;
             double money = 0;
@@ -27,11 +28,11 @@ namespace _22SmartLily
                 }
                 else
                 {
-                    toyCount++;
+                    toysCount++;
                 }
             }
             
-            money = birthdayMoneySum + (toyCount * toyPrice);
+            money = birthdayMoneySum + (toysCount * toyPrice);
             if (money >= washingMashinePrice)
             {
                 Console.WriteLine("Yes! {0:f2}", money - washingMashinePrice);
