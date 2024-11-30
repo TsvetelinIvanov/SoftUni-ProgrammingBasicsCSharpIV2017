@@ -23,6 +23,7 @@ namespace _08Sunglasses
                     Console.WriteLine("*{0}*{1}*{0}*", new string('/', (2 * n) - 2), new string(' ', n));
                 }
             }
+            
             Console.WriteLine("{0}{1}{0}", new string('*', 2 * n), new string(' ', n));
         }
     }
