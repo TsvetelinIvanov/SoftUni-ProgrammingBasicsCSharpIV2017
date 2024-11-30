@@ -17,6 +17,7 @@ namespace _04TriangleOfDollars
                 {
                     Console.Write("$ ");
                 }
+                
                 Console.WriteLine();
             }
         }
