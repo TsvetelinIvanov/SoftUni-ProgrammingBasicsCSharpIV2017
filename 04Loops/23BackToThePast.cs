@@ -11,31 +11,31 @@ namespace _23BackToThePast
         static void Main(string[] args)
         {
             double inheritance = double.Parse(Console.ReadLine());
-            int year = int.Parse(Console.ReadLine());           
-            double moneySpent = 0;
+            int year = int.Parse(Console.ReadLine());
+            
+            double spentMoney = 0;
             int age = 18;
-        
             for (int i = 1800; i <= year; i++)
             {
                 if (i % 2 == 0)
                 {
-                    moneySpent += 12000;
+                    spentMoney += 12000;
                 }
                 else
                 {
-                    moneySpent += 12000 + 50 * age;
+                    spentMoney += 12000 + 50 * age;
                 }
                 
                 age++;
             }
             
-            if (inheritance >= moneySpent)
+            if (inheritance >= spentMoney)
             {
-                Console.WriteLine("Yes! He will live a carefree life and will have {0:f2} dollars left.", inheritance - moneySpent);
+                Console.WriteLine("Yes! He will live a carefree life and will have {0:f2} dollars left.", inheritance - spentMoney);
             }
             else
             {
-                Console.WriteLine("He will need {0:f2} dollars to survive.", moneySpent - inheritance);
+                Console.WriteLine("He will need {0:f2} dollars to survive.", spentMoney - inheritance);
             }
         }
     }
