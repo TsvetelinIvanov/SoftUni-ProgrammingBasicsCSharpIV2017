@@ -18,6 +18,7 @@ namespace _03SquareOFStars
                 {
                     Console.Write("* ");
                 }
+                
                 Console.WriteLine();
             }
         }
