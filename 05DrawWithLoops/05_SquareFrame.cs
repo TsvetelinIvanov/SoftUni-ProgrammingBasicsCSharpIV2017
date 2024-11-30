@@ -10,8 +10,7 @@ namespace _05_SquareFrame
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            
+            int n = int.Parse(Console.ReadLine());            
             for (int i = 1; i <= n; i++)
             {
                 if (i == 1 || i == n)
@@ -21,6 +20,7 @@ namespace _05_SquareFrame
                     {
                         Console.Write("- ");
                     }
+                    
                     Console.WriteLine("+");
                 }
                 else
@@ -30,6 +30,7 @@ namespace _05_SquareFrame
                     {
                         Console.Write("- ");
                     }
+                    
                     Console.WriteLine("|");
                 }
             }           
