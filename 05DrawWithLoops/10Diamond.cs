@@ -11,35 +11,36 @@ namespace _10Diamond
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int star = 0;
+            int starsCount = 0;
             if (n % 2 == 0)
             {
-                star = 2;
+                starsCount = 2;
             }
             else
             {
-                star = 1;
+                starsCount = 1;
             }
-            int leftRight = (n - star) / 2;
             
-            Console.WriteLine("{0}{1}{0}", new string('-', leftRight), new string('*', star));
+            int leftRightCount = (n - starsCount) / 2;            
+            Console.WriteLine("{0}{1}{0}", new string('-', leftRightCount), new string('*', starsCount));
             
            if (n > 2)
            {
-               int dash = leftRight - 1;
+               int dashesCount = leftRightCount - 1;
                for (int i = 0; i < (n - 3) / 2; i++)
                {
-                   Console.WriteLine("{0}*{1}*{0}", new string('-', dash), new string('-', star + (2 * i)));
-                   dash--;
+                   Console.WriteLine("{0}*{1}*{0}", new string('-', dashesCount), new string('-', starsCount + (2 * i)));
+                   dashesCount--;
                }
-               Console.WriteLine("*{0}*", new string('-', n - 2));
                
+               Console.WriteLine("*{0}*", new string('-', n - 2));               
                for (int i = (n - 3) / 2 - 1; i >= 0; i--)
                {
-                   dash++;
-                   Console.WriteLine("{0}*{1}*{0}", new string('-', dash), new string('-', star + (2 * i)));
+                   dashesCount++;
+                   Console.WriteLine("{0}*{1}*{0}", new string('-', dashesCount), new string('-', starsCount + (2 * i)));
                }
-               Console.WriteLine("{0}{1}{0}", new string('-', leftRight), new string('*', star));
+               
+               Console.WriteLine("{0}{1}{0}", new string('-', leftRightCount), new string('*', starsCount));
            }        
         }
     }
