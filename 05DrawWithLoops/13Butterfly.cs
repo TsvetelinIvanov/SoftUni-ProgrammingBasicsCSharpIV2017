@@ -12,7 +12,7 @@ namespace _13Butterfly
         {
             int n = int.Parse(Console.ReadLine());
             for (int i = 1; i < n - 1; i++)
-			      {
+	    {
                 if (i % 2 == 0)
                 {
                     Console.WriteLine(@"{0}\ /{0}", new string('-', n - 2));
@@ -21,10 +21,9 @@ namespace _13Butterfly
                 {
                     Console.WriteLine(@"{0}\ /{0}", new string('*', n - 2));
                 }
-			      }
+	    }
             
-            Console.WriteLine("{0}@{0}", new string(' ', n - 1));
-            
+            Console.WriteLine("{0}@{0}", new string(' ', n - 1));            
             for (int i = 1; i < n - 1; i++)
             {
                 if (i % 2 == 0)
