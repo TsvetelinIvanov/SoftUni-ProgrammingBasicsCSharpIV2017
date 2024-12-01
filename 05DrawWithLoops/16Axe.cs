@@ -11,9 +11,7 @@ namespace _16Axe
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            
-            Console.WriteLine("{0}**{1}", new string('-', n * 3), new string('-', n * 2 - 2));
-            
+            Console.WriteLine("{0}**{1}", new string('-', n * 3), new string('-', n * 2 - 2));            
             for (int i = 1; i < n; i++)
             {
                 Console.WriteLine("{0}*{1}*{2}", new string('-', n * 3), new string('-', i), new string('-', (n * 2 - 2) - i));
