@@ -11,14 +11,14 @@ namespace _12Fort
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            Console.Write(@"/{0}\", new string('^', n / 2));
-            int line = 0;            
+            Console.Write(@"/{0}\", new string('^' n / 2));
+            int linesCount = 0;            
             for (int i = 5; i <= n; i += 2)
             {                    
-                line++;
-                Console.Write("__", line);
-            }                                    
+                linesCount++;
+                Console.Write("__", linesCount);
+            }
+            
             Console.WriteLine(@"/{0}\", new string('^', n / 2));
             
             if (n <= 4)
@@ -38,18 +38,20 @@ namespace _12Fort
                 Console.Write("|{0}", new string(' ', n / 2 + 1));                
                 for (int i = 5; i <= n; i += 2)
                 {
-                    line++;
-                    Console.Write("__", line);
+                    linesCount++;
+                    Console.Write("__", linesCount);
                 }
+                
                 Console.WriteLine("{0}|", new string(' ', n / 2 + 1));
             }
             
             Console.Write(@"\{0}/", new string('_', n / 2));               
             for (int i = 5; i <= n; i += 2)
             {
-                line++;
-                Console.Write("  ", line);
+                linesCount++;
+                Console.Write("  ", linesCount);
             }
+            
             Console.WriteLine(@"\{0}/", new string('_', n / 2));
         }
     }
