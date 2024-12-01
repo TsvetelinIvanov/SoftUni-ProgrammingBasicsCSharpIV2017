@@ -21,8 +21,7 @@ namespace _14Stop
                 middleCount += 2;
 	    }
             
-            Console.WriteLine(@"//{0}STOP!{0}\\", new string('_', middleCount / 2 - 2));
-		
+            Console.WriteLine(@"//{0}STOP!{0}\\", new string('_', middleCount / 2 - 2));		
             for (int i = 0; i < n; i++)
             {
                 Console.WriteLine(@"{0}\\{1}//{0}", new string('.', pointsCount), new string('_', middleCount));
