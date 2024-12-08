@@ -17,7 +17,11 @@ namespace _19StopNumber
             {
                 if(i % 6 == 0)
                 {
-                    if (i == S) break;
+                    if (i == S) 
+                    {
+                        break;
+                    }
+                    
                     Console.Write("{0} ", i);
                 }
             }
