@@ -18,6 +18,7 @@ namespace _06NumberInRange1To100
                 Console.Write("Enter a number in the range [1...100]: ");
                 n = int.Parse(Console.ReadLine());
             }
+            
             Console.WriteLine("The number is " + n);
         }
     }
