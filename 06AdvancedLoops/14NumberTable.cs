@@ -21,8 +21,10 @@ namespace _14NumberTable
                     {
                         number = 2 * n - number;
                     }
+                    
                     Console.Write("{0} ", number);
                 }
+                
                 Console.WriteLine();
             }
         }
