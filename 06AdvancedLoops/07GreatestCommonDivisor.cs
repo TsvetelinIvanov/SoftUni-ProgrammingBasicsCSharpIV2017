@@ -10,18 +10,19 @@ namespace _07GreatestCommonDivisor
     {
         static void Main(string[] args)
         {
-            int a1 = int.Parse(Console.ReadLine());
-            int b1 = int.Parse(Console.ReadLine());                      
-            int a = Math.Max(a1, b1);
-            int b = Math.Min(a1, b1);
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
             
-            while (b != 0)
+            int larger = Math.Max(a, b);
+            int smaller = Math.Min(a, b);            
+            while (smaller != 0)
             {
-                int temp = b;
-                b = a % b;
-                a = temp;
+                int temp = smaller;
+                smaller = larger % smaller;
+                larger = temp;
             }
-            Console.WriteLine(a);
+            
+            Console.WriteLine(larger);
         }
     }
 }
