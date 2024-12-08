@@ -31,8 +31,10 @@ namespace _20Digits
                     {
                         number += c;
                     }
+                    
                     Console.Write(number + " ");
                 }
+                
                 Console.WriteLine();
             }
         }
