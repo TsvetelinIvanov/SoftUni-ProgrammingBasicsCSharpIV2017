@@ -10,14 +10,18 @@ namespace _11EnterEvenNumber
     {
         static void Main(string[] args)
         {
-            var n = 0;
+            int n = 0;
             while (true)
             {
                 try
                 {
                     Console.Write("Enter even number: ");
                     n = int.Parse(Console.ReadLine());
-                    if (n % 2 == 0) break;
+                    if (n % 2 == 0) 
+                    {
+                        break;
+                    }
+                    
                     Console.WriteLine("The number is not even.");
                 }
                 catch
