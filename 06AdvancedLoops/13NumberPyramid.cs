@@ -16,12 +16,20 @@ namespace _13NumberPyramid
             {
                 for (int column = 1; column <= row; column++)
                 {
-                    if (number > n) break;
+                    if (number > n) 
+                    {
+                        break;
+                    }
+                    
                     Console.Write("{0} ", number);
                     number++;                    
-                }                
+                }
+                
                 Console.WriteLine();
-                if (number > n) break; //for removing the spaces.
+                if (number > n) 
+                {
+                    break; //for removing the spaces.
+                }
             }
         }
     }
