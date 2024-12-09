@@ -11,17 +11,18 @@ namespace _07SumsStep3
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            
             int sum1 = 0;
             int sum2 = 0;
             int sum3 = 0;
+            
             int count1 = 1;
             int count2 = 2;
             int count3 = 3;
 
             for (int i = 1; i <= n; i++)
             {                
-                int nSum = int.Parse(Console.ReadLine());               
-                
+                int nSum = int.Parse(Console.ReadLine());
                 if (i == count1)
                 {
                     sum1 += nSum;
