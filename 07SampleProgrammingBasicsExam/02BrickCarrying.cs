@@ -10,11 +10,12 @@ namespace _02BrickCarrying
     {
         static void Main(string[] args)
         {
-            int brickCount = int.Parse(Console.ReadLine());
-            int workerCount = int.Parse(Console.ReadLine());
+            int bricksCount = int.Parse(Console.ReadLine());
+            int workersCount = int.Parse(Console.ReadLine());
             int wheelbarrowVolume = int.Parse(Console.ReadLine());
-            double course = (double)brickCount / (workerCount * wheelbarrowVolume);
-            Console.WriteLine(Math.Ceiling(course));
+            
+            double courses = (double)bricksCount / (workersCount * wheelbarrowVolume);
+            Console.WriteLine(Math.Ceiling(courses));
         }
     }
 }
