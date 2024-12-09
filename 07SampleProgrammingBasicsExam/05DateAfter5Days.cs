@@ -29,12 +29,12 @@ namespace _05DateAfter5Days
             }
             else if ((month == 2 || month == 02) && dateDay > 28)
             {
-                dateDay -= 28;
+                dateDay = dateDay - 28;
                 dateMonth++;
             }
             else if (month == 12 && dateDay > 31)
             {
-                dateDay -= 31;
+                dateDay = dateDay - 31;
                 dateMonth = 1;
             }
 
