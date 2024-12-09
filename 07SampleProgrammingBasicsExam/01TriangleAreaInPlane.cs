@@ -16,6 +16,7 @@ namespace _01TriangleAreaInPlane
             int y2 = int.Parse(Console.ReadLine());
             int x3 = int.Parse(Console.ReadLine());
             int y3 = int.Parse(Console.ReadLine());
+            
             double a = Math.Abs(x2 - x3);
             double h = Math.Abs(y1 - y2);
             double S = a * h / 2.0;
