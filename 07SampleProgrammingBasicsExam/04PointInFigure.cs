@@ -12,10 +12,10 @@ namespace _04PointInFigure
         {
             int x = int.Parse(Console.ReadLine());
             int y = int.Parse(Console.ReadLine());
+            
             bool checF1 = (x >= 2 && x <= 4) && (y >= -3 && y <= 1);
             bool checF2 = (x >= 4 && x <= 10) && (y >= -5 && y <= 3);
             bool checF3 = (x >= 10 && x <= 12) && (y >= -3 && y <= 1);
-
             if (checF1)
             {
                 Console.WriteLine("in");
