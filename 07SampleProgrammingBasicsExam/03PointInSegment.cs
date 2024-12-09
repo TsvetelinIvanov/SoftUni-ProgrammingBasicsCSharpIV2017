@@ -11,12 +11,11 @@ namespace _03PointInSegment
         static void Main(string[] args)
         {
             int firstEnd = int.Parse(Console.ReadLine());
-            int secondtEnd = int.Parse(Console.ReadLine());
+            int secondEnd = int.Parse(Console.ReadLine());
             int point = int.Parse(Console.ReadLine());
-
-            if (firstEnd <= secondtEnd)
+            if (firstEnd <= secondEnd)
             {
-                if (point >= firstEnd && point <= secondtEnd)
+                if (point >= firstEnd && point <= secondEnd)
                 {
                     Console.WriteLine("in");
                 }
@@ -27,7 +26,7 @@ namespace _03PointInSegment
             }
             else
             {
-                if (point >= secondtEnd && point <= firstEnd)
+                if (point >= secondEnd && point <= firstEnd)
                 {
                     Console.WriteLine("in");
                 }
@@ -38,7 +37,7 @@ namespace _03PointInSegment
             }
 
             int distance1 = Math.Abs(point - firstEnd);
-            int distance2 = Math.Abs(point - secondtEnd);
+            int distance2 = Math.Abs(point - secondEnd);
             int distance = Math.Min(distance1, distance2);
             Console.WriteLine(distance);
         }
