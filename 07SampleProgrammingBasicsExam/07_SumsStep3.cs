@@ -11,14 +11,13 @@ namespace _07SumsStep3
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
+            
             int sum1 = 0;
             int sum2 = 0;
-            int sum3 = 0;
-            
+            int sum3 = 0;            
             for (int i = 0; i < n; i++)
             {
                 int nSum = int.Parse(Console.ReadLine());
-
                 if (i % 3 == 0)
                 {
                     sum1 += nSum;                    
