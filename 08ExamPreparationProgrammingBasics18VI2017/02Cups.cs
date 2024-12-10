@@ -10,16 +10,15 @@ namespace _02Cups
     {
         static void Main(string[] args)
         {
-            int glassesExpected = int.Parse(Console.ReadLine());
-            int workers = int.Parse(Console.ReadLine());
-            int workDays = int.Parse(Console.ReadLine());
+            int expectedGlassesCount = int.Parse(Console.ReadLine());
+            int workersCount = int.Parse(Console.ReadLine());
+            int workDaysCount = int.Parse(Console.ReadLine());
 
-            decimal allHours = (decimal)workers * workDays * 8m;
-            decimal glasses = Math.Floor(allHours / 5);
-            decimal diff = Math.Abs(glasses - glassesExpected);
-            decimal sum = diff * 4.20m;
-
-            if (glasses < glassesExpected)
+            decimal allHoursCount = (decimal)workersCount * workDaysCount * 8m;
+            decimal glassesCount = Math.Floor(allHours / 5);
+            decimal difference = Math.Abs(glassesCount - expectedGlassesCount);
+            decimal sum = difference * 4.20m;
+            if (glassesCount < expectedGlassesCount)
             {
                 Console.WriteLine("Losses: {0:f2}", sum);
             }
