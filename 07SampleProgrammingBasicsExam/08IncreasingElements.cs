@@ -10,33 +10,36 @@ namespace _08IncreasingElements
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
+            int n = int.Parse(Console.ReadLine())
+            
             int counter = 0;
-            int nextCounter = 0;
+            int maxCounter = 0;
             int previousNumber = int.MaxValue;
-
             for (int i = 0; i < n; i++)
             {
                 int number = int.Parse(Console.ReadLine());
                 if (number > previousNumber)
                 {
                     counter++;
-                    if (counter > nextCounter)
+                    if (counter > maxCounter)
                     {
-                        nextCounter = counter;
+                        maxCounter = counter;
                     }             
                 }
                 else
                 {                          
                         counter = 0;                    
                 }
+                
                 previousNumber = number;
             }
 
             if (n != 0)
-                nextCounter++;
+            {
+                maxCounter++;
+            }
                 
-            Console.WriteLine(nextCounter);
+            Console.WriteLine(maxCounter);
         }
     }
 }
