@@ -12,8 +12,10 @@ namespace _11Increasing4Numbers
         {
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
-
-            if ((b - a) < 3) Console.WriteLine("No");
+            if ((b - a) < 3)
+            {
+                Console.WriteLine("No");
+            }
 
             for (int n1 = a; n1 <= b - 3; n1++)
             {
