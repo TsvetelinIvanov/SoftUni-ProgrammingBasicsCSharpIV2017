@@ -10,26 +10,33 @@ namespace _03BikeRace
     {
         static void Main(string[] args)
         {
-            int juniors = int.Parse(Console.ReadLine());
-            int seniors = int.Parse(Console.ReadLine());
+            int juniorsCount = int.Parse(Console.ReadLine());
+            int seniorsCount = int.Parse(Console.ReadLine());
             string place = Console.ReadLine().ToLower();
-            decimal taxes = 0;
-
+            decimal feesNumber = 0;
             switch (place)
             {
-                case "trail": taxes = juniors * 5.50m + seniors * 7m; break;
-                case "cross-country": taxes = juniors * 8m + seniors * 9.50m;
-                    if (juniors + seniors >= 50)
-                    {
-                        taxes = taxes - (taxes * 0.25m);
-                    }
+                case "trail":
+                    feesNumber = juniorsCount * 5.50m + seniorsCount * 7m;
                     break;
-                case "downhill": taxes = juniors * 12.25m + seniors * 13.750m; break;
-                case "road": taxes = juniors * 20m + seniors * 21.50m; break;
+                case "cross-country":
+                    taxes = juniorsCount * 8m + seniorsCount * 9.50m;
+                    if (juniorsCount + seniorsCount >= 50)
+                    {
+                        feesNumber = feesNumber - (feesNumber * 0.25m);
+                    }
+                    
+                    break;
+                case "downhill":
+                    feesNumber = juniorsCount * 12.25m + seniorsCount * 13.750m;
+                    break;
+                case "road":
+                    feesNumber = juniorsCount * 20m + seniorsCount * 21.50m;
+                    break;
             }
 
-            decimal result = taxes - (taxes * 0.05m);
-            Console.WriteLine("{0:f2}", result);
+            decimal finalFeesNumber = feesNumber - (feesNumber * 0.05m);
+            Console.WriteLine("{0:f2}", finalFeesNumber);
         }
     }
 }
