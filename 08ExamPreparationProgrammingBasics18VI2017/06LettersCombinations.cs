@@ -12,22 +12,21 @@ namespace _06LettersCombinations
         {
             char startLetter = char.Parse(Console.ReadLine());
             char stoptLetter = char.Parse(Console.ReadLine());
-            char skiptLetter = char.Parse(Console.ReadLine());
+            char skipLetter = char.Parse(Console.ReadLine());
             int counter = 0;
-
             for (char firstLetter = startLetter; firstLetter <= stoptLetter; firstLetter++)
             {
-                for (char secondLettr = startLetter; secondLettr <= stoptLetter; secondLettr++)
-                  {
-                   for (char thirthLettr = startLetter; thirthLettr <= stoptLetter; thirthLettr++)
-                     {
-                        if (firstLetter != skiptLetter && secondLettr != skiptLetter && thirthLettr != skiptLetter) 
+                for (char secondLetter = startLetter; secondLetter <= stoptLetter; secondLetter++)
+                {
+                    for (char thirdLetter = startLetter; thirdLetter <= stoptLetter; thirdLetter++)
+                    {
+                        if (firstLetter != skipLetter && secondLetter != skipLetter && thirdLetter != skipLetter) 
                         {
-                            Console.Write("{0}{1}{2} ", firstLetter, secondLettr, thirthLettr);
+                            Console.Write("{0}{1}{2} ", firstLetter, secondLetter, thirdLetter);
                             counter++;
                         }
-                     }
-                  }
+                    }
+                }
             }
             
             Console.WriteLine(counter);
