@@ -22,7 +22,6 @@ namespace _10RectangleWithStars
             }
 
             Console.WriteLine(new string('%', n * 2));
-
             if (n == 2)
             {
                 Console.WriteLine("%**%");
