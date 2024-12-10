@@ -25,13 +25,13 @@ namespace _05Fox
             for (int i = 0; i < n / 3; i++)
 	    {                
                 Console.WriteLine(@"|{0}\{1}/{0}|", new string('*', sideAsterisksCount), new string('*', midleAsterisksCount));
-                sideAsterics++;
-                midleAsterics -= 2;
+                sideAstericsCount++;
+                midleAstericsCount -= 2;
 	    }
 
             for (int i = 1; i <= n; i++)
             {
-                int asterics = i;
+                int asterisksCount = i;
                 int dashesCount = lenght - 2 - 2 * asterisksCount;
                 Console.WriteLine(@"{0}\{1}/{0}", new string('-', asterisksCount), new string('*', dashesCount));
             }
