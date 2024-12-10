@@ -10,34 +10,35 @@ namespace _04Hospital
     {
         static void Main(string[] args)
         {
-            int days = int.Parse(Console.ReadLine());
-            int doctors = 7;
-            int treatedPatiens = 0;
-            int untreatedPatiens = 0;
-
-            for (int i = 1; i <= days; i++)
+            int daysCount = int.Parse(Console.ReadLine());
+            int doctorsCount = 7;
+            
+            int treatedPatiensCount = 0;
+            int untreatedPatiensCount = 0;
+            for (int i = 1; i <= daysCount; i++)
             {
                 if (i % 3 == 0)
                 {
-                    if (treatedPatiens < untreatedPatiens)
+                    if (treatedPatiensCount < untreatedPatiensCount)
                     {
                         doctors++;
                     }
                 }
-                int patiens = int.Parse(Console.ReadLine());
-                if (patiens >= doctors)
+                
+                int patiensCount = int.Parse(Console.ReadLine());
+                if (patiensCount >= doctorsCount)
                 {
-                    treatedPatiens += doctors;
-                    untreatedPatiens += patiens - doctors;
+                    treatedPatiensCount += doctorsCount;
+                    untreatedPatiensCount += patiensCount - doctorsCount;
                 }
                 else
                 {
-                    treatedPatiens += patiens;
+                    treatedPatiensCount += patiensCount;
                 }
             }
 
-            Console.WriteLine("Treated patients: {0}.", treatedPatiens);
-            Console.WriteLine("Untreated patients: {0}.", untreatedPatiens);
+            Console.WriteLine("Treated patients: {0}.", treatedPatiensCount);
+            Console.WriteLine("Untreated patients: {0}.", untreatedPatiensCount);
         }
     }
 }
