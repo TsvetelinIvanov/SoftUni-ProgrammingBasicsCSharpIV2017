@@ -10,19 +10,19 @@ namespace _02WorkHours
     {
         static void Main(string[] args)
         {
-            int neededHours = int.Parse(Console.ReadLine());
-            int workers = int.Parse(Console.ReadLine());
-            int workDays = int.Parse(Console.ReadLine());
+            int neededHoursCount = int.Parse(Console.ReadLine());
+            int workersCount = int.Parse(Console.ReadLine());
+            int workDaysCount = int.Parse(Console.ReadLine());
 
-            int workHours = workers * workDays * 8;
-            if (workHours >= neededHours)
+            int workHoursCount = workersCount * workDaysCount * 8;
+            if (workHoursCount >= neededHoursCount)
             {
-                Console.WriteLine("{0} hours left", workHours - neededHours);
+                Console.WriteLine("{0} hours left", workHoursCount - neededHoursCount);
             }
             else
             {
-                Console.WriteLine("{0} overtime", neededHours - workHours);
-                Console.WriteLine("Penalties: {0} ", (neededHours - workHours) * workDays);
+                Console.WriteLine("{0} overtime", neededHoursCount - workHoursCount);
+                Console.WriteLine("Penalties: {0} ", (neededHoursCount - workHoursCount) * workDaysCount);
             }
         }
     }
