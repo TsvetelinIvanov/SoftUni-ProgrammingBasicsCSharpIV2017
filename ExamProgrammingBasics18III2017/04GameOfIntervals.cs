@@ -11,6 +11,7 @@ namespace _04GameOfIntervals
         static void Main(string[] args)
         {
             int moves = int.Parse(Console.ReadLine());
+            
             double score = 0.0;
             double from0To9 = 0.0;
             double from10To19 = 0.0;
