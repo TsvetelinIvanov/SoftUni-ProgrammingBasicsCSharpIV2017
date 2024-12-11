@@ -11,30 +11,33 @@ namespace _06SumOfTwoNumbers
         static void Main(string[] args)
         {
             int startNumber = int.Parse(Console.ReadLine());
-            int stoptNumber = int.Parse(Console.ReadLine());
-            int magictNumber = int.Parse(Console.ReadLine());
+            int stopNumber = int.Parse(Console.ReadLine());
+            int magicNumber = int.Parse(Console.ReadLine());
+            
             bool check = false;
             int counter = 0;
-
-            for (int i = startNumber; i <= stoptNumber; i++)
+            for (int i = startNumber; i <= stopNumber; i++)
             {
-                for (int j = startNumber; j <= stoptNumber; j++)
+                for (int j = startNumber; j <= stopNumber; j++)
                 {
                     counter++;
-                    if (i + j == magictNumber)
+                    if (i + j == magicNumber)
                     {
-                        Console.WriteLine("Combination N:{0} ({1} + {2} = {3})", counter, i, j, magictNumber);
+                        Console.WriteLine("Combination N:{0} ({1} + {2} = {3})", counter, i, j, magicNumber);
                         check = true;
                         break;
                     }
                 }
-                if (check == true) 
-                break;
+                
+                if (check == true)
+                {
+                    break;
+                }
             }
 
             if (check == false)
             {
-                Console.WriteLine("{0} combinations - neither equals {1}", counter, magictNumber);
+                Console.WriteLine("{0} combinations - neither equals {1}", counter, magicNumber);
             }
         }
     }
