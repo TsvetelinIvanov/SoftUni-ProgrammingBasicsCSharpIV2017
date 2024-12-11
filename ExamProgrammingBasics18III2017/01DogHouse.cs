@@ -14,16 +14,15 @@ namespace _01DogHouse
             double h = double.Parse(Console.ReadLine());
 
             double sides = w * (w / 2) * 2;
-            double sqrt = (w / 2) * (w / 2);
+            double square = (w / 2) * (w / 2);
             double triangle = (w / 2 * (h - w / 2)) / 2;
-            double behind = sqrt + triangle;
+            double back = square + triangle;
+            
             double entrance = (w / 5) * (w / 5);
-            double front = behind - entrance;
-
-            double green = (sides + behind + front) / 3;
+            double front = back - entrance;
+            double green = (sides + back + front) / 3;
 
             double roof = w * (w / 2) * 2;
-
             double red = roof / 5;
 
             Console.WriteLine("{0:f2}", green);
