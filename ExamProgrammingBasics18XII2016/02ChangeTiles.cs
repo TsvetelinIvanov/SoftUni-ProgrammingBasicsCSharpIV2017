@@ -20,9 +20,8 @@ namespace _02ChangeTiles
 
             double floorArea = floorWidth * floorLenght;
             double tileArea = triangleSide * triangleHeight / 2;
-            double tiles = Math.Ceiling(floorArea / tileArea) + 5;
-            double cost = tiles * tilePrice + masterCost;
-
+            double tilesCount = Math.Ceiling(floorArea / tileArea) + 5;
+            double cost = tilesCount * tilePrice + masterCost;
             if (money >= cost)
             {
                 Console.WriteLine("{0:f2} lv left.", money - cost);
