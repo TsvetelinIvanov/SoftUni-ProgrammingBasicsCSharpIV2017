@@ -11,14 +11,14 @@ namespace _06LettersCombinations
         static void Main(string[] args)
         {
             char startLetter = char.Parse(Console.ReadLine());
-            char stoptLetter = char.Parse(Console.ReadLine());
+            char stopLetter = char.Parse(Console.ReadLine());
             char skipLetter = char.Parse(Console.ReadLine());
             int counter = 0;
-            for (char firstLetter = startLetter; firstLetter <= stoptLetter; firstLetter++)
+            for (char firstLetter = startLetter; firstLetter <= stopLetter; firstLetter++)
             {
-                for (char secondLetter = startLetter; secondLetter <= stoptLetter; secondLetter++)
+                for (char secondLetter = startLetter; secondLetter <= stopLetter; secondLetter++)
                 {
-                    for (char thirdLetter = startLetter; thirdLetter <= stoptLetter; thirdLetter++)
+                    for (char thirdLetter = startLetter; thirdLetter <= stopLetter; thirdLetter++)
                     {
                         if (firstLetter != skipLetter && secondLetter != skipLetter && thirdLetter != skipLetter) 
                         {
