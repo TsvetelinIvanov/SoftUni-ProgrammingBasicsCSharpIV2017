@@ -10,26 +10,26 @@ namespace _04Grades
     {
         static void Main(string[] args)
         {
-            int students = int.Parse(Console.ReadLine());
+            int studentsCount = int.Parse(Console.ReadLine());
+            
             double top = 0.0;
             double almostTop = 0.0;
             double almostFail = 0.0;
             double fail = 0.0;
             double all = 0.0;            
             double average = 0.0;
-
-            for (int i = 0; i < students; i++)
+            for (int i = 0; i < studentsCount; i++)
             {
-                double student = double.Parse(Console.ReadLine());
-                if(student >= 5.00)
+                double studentGrade = double.Parse(Console.ReadLine());
+                if(studentGrade >= 5.00)
                 {
                     top += 1;                    
                 }
-                else if (student >= 4.00)
+                else if (studentGrade >= 4.00)
                 {
                     almostTop += 1;                    
                 }
-                else if (student >= 3.00)
+                else if (studentGrade >= 3.00)
                 {
                     almostFail += 1;                    
                 }
@@ -37,7 +37,8 @@ namespace _04Grades
                 {
                     fail += 1;                    
                 }
-                average += student;
+                
+                average += studentGrade;
                 all++;
             }
 
