@@ -17,6 +17,7 @@ namespace _01Distance
 
             decimal secondSpeed = (decimal)firstSpeed + firstSpeed * 0.1m;
             decimal thirdSpeed = (decimal)secondSpeed - secondSpeed * 0.05m;
+            
             decimal fistDistance = firstSpeed * firstTime * 0.0166666666666666666666666666666666m;
             decimal secondDistance = secondSpeed * secondTime * 0.01666666666666666666666666666666666m;
             decimal thirdDistance = thirdSpeed * thirdTime * 0.0166666666666666666666666666666666m;
