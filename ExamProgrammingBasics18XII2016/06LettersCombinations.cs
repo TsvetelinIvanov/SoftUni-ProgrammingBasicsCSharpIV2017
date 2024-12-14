@@ -11,19 +11,19 @@ namespace _06LettersCombinations
         static void Main(string[] args)
         {
             char startLetter = char.Parse(Console.ReadLine());
-            char stoptLetter = char.Parse(Console.ReadLine());
-            char skiptLetter = char.Parse(Console.ReadLine());
+            char stopLetter = char.Parse(Console.ReadLine());
+            char skipLetter = char.Parse(Console.ReadLine());
+            
             int counter = 0;
-
-            for (char firstLetter = startLetter; firstLetter <= stoptLetter; firstLetter++)
+            for (char firstLetter = startLetter; firstLetter <= stopLetter; firstLetter++)
             {
-                for (char secondLettr = startLetter; secondLettr <= stoptLetter; secondLettr++)
+                for (char secondLetter = startLetter; secondLetter <= stopLetter; secondLetter++)
                 {
-                    for (char thirthLettr = startLetter; thirthLettr <= stoptLetter; thirthLettr++)
+                    for (char thirdLetter = startLetter; thirdLetter <= stopLetter; thirdLetter++)
                     {
-                        if (firstLetter != skiptLetter && secondLettr != skiptLetter && thirthLettr != skiptLetter)
+                        if (firstLetter != skipLetter && secondLetter != skipLetter && thirdLetter != skipLetter)
                         {
-                            Console.Write("{0}{1}{2} ", firstLetter, secondLettr, thirthLettr);
+                            Console.Write("{0}{1}{2} ", firstLetter, secondLetter, thirdLetter);
                             counter++;
                         }
                     }
