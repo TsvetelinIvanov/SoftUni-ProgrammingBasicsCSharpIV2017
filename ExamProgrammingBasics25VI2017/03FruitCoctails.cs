@@ -19,61 +19,61 @@ namespace _03FruitCoctails
             switch (fruit)
             {
                 case "Watermelon":
+                {
+                    switch (volume)
                     {
-                        switch (volume)
-                        {
-                            case "small":
-                                price = 2.0 * 56;
-                                break;
-                            case "big":
-                                price = 5.0 * 28.7;
-                                break;
-                        }
+                        case "small":
+                            price = 2.0 * 56;
+                            break;
+                        case "big":
+                            price = 5.0 * 28.7;
+                            break;
                     }
+                }
                     
-                        break;
+                break;
                 case "Mango":
-                        {
-                            switch (volume)
-                            {
-                                case "small":
-                                    price = 2.0 * 36.66;
-                                    break;
-                                case "big":
-                                    price = 5.0 * 19.6;
-                                    break;
-                            }
-                        }
+                {
+                    switch (volume)
+                    {
+                        case "small":
+                            price = 2.0 * 36.66;
+                            break;
+                        case "big":
+                            price = 5.0 * 19.6;
+                            break;
+                    }
+                }
                     
-                        break;
+                break;
                 case "Pineapple":
-                        {
-                            switch (volume)
-                            {
-                                case "small":
-                                    price = 2.0 * 42.1;
-                                    break;
-                                case "big":
-                                    price = 5.0 * 24.8;
-                                    break;
-                            }
-                        }
+                {
+                    switch (volume)
+                    {
+                        case "small":
+                            price = 2.0 * 42.1;
+                            break;
+                        case "big":
+                            price = 5.0 * 24.8;
+                            break;
+                    }
+                }
                     
-                        break;
+                break;
                 case "Raspberry":
-                        {
-                            switch (volume)
-                            {
-                                case "small":
-                                    price = 2.0 * 20;
-                                    break;
-                                case "big":
-                                    price = 5.0 * 15.2;
-                                    break;
-                            }
-                        }
+                {
+                    switch (volume)
+                    {
+                        case "small":
+                            price = 2.0 * 20;
+                            break;
+                        case "big":
+                            price = 5.0 * 15.2;
+                            break;
+                    }
+                }
                     
-                        break;
+                break;
             }
 
             cost = (double)number * price;
