@@ -10,24 +10,24 @@ namespace _04MoneyAward
     {
         static void Main(string[] args)
         {
-            int parts = int.Parse(Console.ReadLine());
-            double award1Point = double.Parse(Console.ReadLine());
-            double points = 0.0;
-
-            for (int i = 1; i <= parts; i++)
+            int partsCount = int.Parse(Console.ReadLine());
+            double awardFor1Point = double.Parse(Console.ReadLine());
+            
+            double pointsCount = 0.0;
+            for (int i = 1; i <= partsCount; i++)
             {
-                double partPoints = double.Parse(Console.ReadLine());
+                double partPointsCount = double.Parse(Console.ReadLine());
                 if (i % 2 == 0)
                 {
-                    points += 2 * partPoints;
+                    pointsCount += 2 * partPointsCount;
                 }
                 else
                 {
-                    points += partPoints;
+                    pointsCount += partPointsCount;
                 }
             }
 
-            double award = points * award1Point;
+            double award = pointsCount * awardFor1Point;
             Console.WriteLine("The project prize was {0:f2} lv.", award);
         }
     }
