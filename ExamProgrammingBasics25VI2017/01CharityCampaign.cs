@@ -10,19 +10,19 @@ namespace _01CharityCampaign
     {
         static void Main(string[] args)
         {
-            int campaignDays = int.Parse(Console.ReadLine());
-            int confectioners = int.Parse(Console.ReadLine());
-            int caces = int.Parse(Console.ReadLine());
-            int gofretys = int.Parse(Console.ReadLine());
-            int pancaces = int.Parse(Console.ReadLine());
+            int campaignDaysCount = int.Parse(Console.ReadLine());
+            int confectionersCount = int.Parse(Console.ReadLine());
+            int cacesCount = int.Parse(Console.ReadLine());
+            int gofretiesCount = int.Parse(Console.ReadLine());
+            int pancacesCount = int.Parse(Console.ReadLine());
 
-            double cacesPrice = 45.0 * caces;
-            double gofretisPrice = 5.8 * gofretys;
-            double pancacesPrice = 3.2 * pancaces;
+            double cacesPrice = 45.0 * cacesCount;
+            double gofretiesPrice = 5.8 * gofretiesCount;
+            double pancacesPrice = 3.2 * pancacesCount;
 
-            double daysIncome = (cacesPrice + gofretisPrice + pancacesPrice) * confectioners;
-            double sum = (campaignDays * daysIncome) - ((campaignDays * daysIncome) / 8.0);
-
+            double dayIncome = (cacesPrice + gofretisPrice + pancacesPrice) * confectionersCount;
+            double sum = (campaignDaysCount * dayIncome) - ((campaignDaysCount * dayIncome) / 8.0);
+            
             Console.WriteLine("{0:f2}", sum);
         }
     }
