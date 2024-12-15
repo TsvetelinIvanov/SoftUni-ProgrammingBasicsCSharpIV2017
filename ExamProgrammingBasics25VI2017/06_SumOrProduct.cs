@@ -10,22 +10,34 @@ namespace _06_SumOrProduct
     {
         static void Main(string[] args)
         {
-            int ctrl = int.Parse(Console.ReadLine());
-            bool isNo = true;
-
-            for (int i = 1; i <= 30; i++)
-                for (int j = 1; j <= 30; j++)
-                    for (int k = 1; k <= 30; k++)
+            int n = int.Parse(Console.ReadLine());
+            
+            bool isMatch = false;
+            for (int n1 = 1; n1 <= 30; n1++)
+            {
+                for (int n2 = 1; n2 <= 30; n2++)
+                {
+                    for (int n3 = 1; n3 <= 30; n3++)
                     {
-                        if (i < j && j < k && i < k && i + j + k == ctrl)
+                        if (n1 < n2 && n2 < n3 && n1 + n2 + n3 == n)
                         { 
-Console.WriteLine("{0} + {1} + {2} = {3}", i, j, k, ctrl); isNo = false; }
-                        if (i > j && j > k && i > k && i * j * k == ctrl)
+                            Console.WriteLine("{0} + {1} + {2} = {3}", n1, n2, n3, n);
+                            isMatch = true;
+                        }
+                        
+                        if (n1 > n2 && n2 > n3 && n1 * n2 * n3 == n)
                         { 
-Console.WriteLine("{0} * {1} * {2} = {3}", i, j, k, ctrl); isNo = false; }
+                            Console.WriteLine("{0} * {1} * {2} = {3}", n1, n2, n3, n);
+                            isMatch = true;
+                        }
                     }
+                }
+            }
 
-            if (isNo == true) Console.WriteLine("No!");
+            if (isMatch == false)
+            {
+                Console.WriteLine("No!");
+            }
         }
     }
 }
