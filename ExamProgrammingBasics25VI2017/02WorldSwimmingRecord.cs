@@ -12,13 +12,12 @@ namespace _02WorldSwimmingRecord
         {
             decimal record = decimal.Parse(Console.ReadLine());
             decimal distance = decimal.Parse(Console.ReadLine());
-            decimal swimm1m = decimal.Parse(Console.ReadLine());
+            decimal swimmingFor1m = decimal.Parse(Console.ReadLine());
 
-            decimal resistence1 = Math.Floor(distance / 15m) ;
-            decimal resistence = resistence1 * 12.5m;
+            decimal resistenceFor1m = Math.Floor(distance / 15m) ;
+            decimal resistence = resistenceFor1m * 12.5m;
 
-            decimal time = (distance * swimm1m) + resistence;
-
+            decimal time = (distance * swimmingFor1m) + resistence;
             if (time < record)
             {
                 Console.WriteLine("Yes, he succeeded! The new world record is {0:f2} seconds.", time);
