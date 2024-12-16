@@ -10,35 +10,44 @@ namespace _04FootballLeague
     {
         static void Main(string[] args)
         {
-            int stadion = int.Parse(Console.ReadLine());
-            int fans = int.Parse(Console.ReadLine());
-            int sectorAfans = 0;
-            int sectorBfans = 0;
-            int sectorVfans = 0;
-            int sectorGfans = 0;
+            int stadionCapacity = int.Parse(Console.ReadLine());
+            int fansCount = int.Parse(Console.ReadLine());
+            
+            int fansInSectorA = 0;
+            int fansInSectorB = 0;
+            int fansInSectorV = 0;
+            int fansInSectorG = 0;
 
-            for (int i = 0; i < fans; i++)
+            for (int i = 0; i < fansCount; i++)
             {
-                var fan = Console.ReadLine();
-                switch (fan)
+                string sector = Console.ReadLine();
+                switch (sector)
                 {
-                    case "A": sectorAfans++; break;
-                    case "B": sectorBfans++; break;
-                    case "V": sectorVfans++; break;
-                    case "G": sectorGfans++; break;
+                    case "A":
+                        fansInSectorA++;
+                        break;
+                    case "B":
+                        fansInSectorB++;
+                        break;
+                    case "V":
+                        fansInSectorV++;
+                        break;
+                    case "G":
+                        fansInSectorG++;
+                        break;
                 }
             }
 
-            double aPercent = sectorAfans * 100.0 / fans;
-            double bPercent = sectorBfans * 100.0 / fans;
-            double vPercent = sectorVfans * 100.0 / fans;
-            double gPercent = sectorGfans * 100.0 / fans;
-            double totalPercent = fans * 100.0 / stadion;
+            double sectorAPercent = fansInSectorA * 100.0 / fansCount;
+            double sectorBPercent = fansInSectorB * 100.0 / fansCount;
+            double sectorVPercent = fansInSectorV * 100.0 / fansCount;
+            double sectorGPercent = fansInSectorG * 100.0 / fansCount;
+            double totalPercent = fansCount * 100.0 / stadionCapacity;
 
-            Console.WriteLine("{0:f2}%", aPercent);
-            Console.WriteLine("{0:f2}%", bPercent);
-            Console.WriteLine("{0:f2}%", vPercent);
-            Console.WriteLine("{0:f2}%", gPercent);
+            Console.WriteLine("{0:f2}%", sectorAPercent);
+            Console.WriteLine("{0:f2}%", sectorBPercent);
+            Console.WriteLine("{0:f2}%", sectorVPercent);
+            Console.WriteLine("{0:f2}%", sectorGPercent);
             Console.WriteLine("{0:f2}%", totalPercent);
         }
     }
