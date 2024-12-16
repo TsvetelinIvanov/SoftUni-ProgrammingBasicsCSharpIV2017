@@ -11,27 +11,27 @@ namespace _02ToyShop
         static void Main(string[] args)
         {
             double excursionPrice = double.Parse(Console.ReadLine());
-            int puselQuontity = int.Parse(Console.ReadLine());
-            int dolllQuontity = int.Parse(Console.ReadLine());
-            int teddybeerlQuontity = int.Parse(Console.ReadLine());
-            int minionQuontity = int.Parse(Console.ReadLine());
-            int lorryQuontity = int.Parse(Console.ReadLine());
+            int puselsQuontity = int.Parse(Console.ReadLine());
+            int dollsQuontity = int.Parse(Console.ReadLine());
+            int teddybearsQuontity = int.Parse(Console.ReadLine());
+            int minionsQuontity = int.Parse(Console.ReadLine());
+            int lorriesQuontity = int.Parse(Console.ReadLine());
 
-            double toyPriceSum = puselQuontity * 2.60 + dolllQuontity * 3 + teddybeerlQuontity * 4.10 + minionQuontity * 8.20 + lorryQuontity * 2;
-            double toyQuontity = (double)puselQuontity + dolllQuontity + teddybeerlQuontity + minionQuontity + lorryQuontity;
-            if (toyQuontity >= 50)
+            double toysPriceSum = puselsQuontity * 2.60 + dollsQuontity * 3 + teddybearsQuontity * 4.10 + minionsQuontity * 8.20 + lorriesQuontity * 2;
+            double toysQuontity = (double)puselsQuontity + dollsQuontity + teddybearsQuontity + minionsQuontity + lorriesQuontity;
+            if (toysQuontity >= 50)
             {
-                toyPriceSum -= toyPriceSum * 0.25;
+                toysPriceSum -= toyPriceSum * 0.25;
             }
 
-            double endToyPriceSum = toyPriceSum - toyPriceSum * 0.10;
-            if (endToyPriceSum >= excursionPrice)
+            double finalToysPriceSum = toysPriceSum - toysPriceSum * 0.10;
+            if (finalToysPriceSum >= excursionPrice)
             {
-                Console.WriteLine("Yes! {0:f2} lv left.", endToyPriceSum - excursionPrice);
+                Console.WriteLine("Yes! {0:f2} lv left.", finalToysPriceSum - excursionPrice);
             }            
             else               
             {
-               Console.WriteLine("Not enough money! {0:f2} lv needed.", excursionPrice - endToyPriceSum);
+               Console.WriteLine("Not enough money! {0:f2} lv needed.", excursionPrice - finalToysPriceSum);
             }
         }
     }
