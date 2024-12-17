@@ -12,16 +12,22 @@ namespace _03TruckDriver
         {
             string season = Console.ReadLine();
             double kilometerPerHour = double.Parse(Console.ReadLine());
+            
             double salary = 0.0;
-
             if (kilometerPerHour <= 5000)
             {
                 switch (season)
                 {
                     case "Spring":
-                    case "Autumn": salary = (kilometerPerHour * 0.75) * 4; break;
-                    case "Summer": salary = (kilometerPerHour * 0.9) * 4; break;
-                    case "Winter": salary = (kilometerPerHour * 1.05) * 4; break;
+                    case "Autumn":
+                        salary = (kilometerPerHour * 0.75) * 4;
+                        break;
+                    case "Summer":
+                        salary = (kilometerPerHour * 0.9) * 4;
+                        break;
+                    case "Winter":
+                        salary = (kilometerPerHour * 1.05) * 4;
+                        break;
                 }
             }
             else if (kilometerPerHour <= 10000)
@@ -29,9 +35,15 @@ namespace _03TruckDriver
                 switch (season)
                 {
                     case "Spring":
-                    case "Autumn": salary = (kilometerPerHour * 0.95) * 4; break;
-                    case "Summer": salary = (kilometerPerHour * 1.10) * 4; break;
-                    case "Winter": salary = (kilometerPerHour * 1.25) * 4; break;
+                    case "Autumn":
+                        salary = (kilometerPerHour * 0.95) * 4;
+                        break;
+                    case "Summer":
+                        salary = (kilometerPerHour * 1.10) * 4;
+                        break;
+                    case "Winter":
+                        salary = (kilometerPerHour * 1.25) * 4;
+                        break;
                 }
             }
             else 
