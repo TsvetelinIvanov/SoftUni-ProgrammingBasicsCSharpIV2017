@@ -12,14 +12,13 @@ namespace _02Styrofoam
         {
             double budget = double.Parse(Console.ReadLine());
             double house = double.Parse(Console.ReadLine());
-            int windows = int.Parse(Console.ReadLine());
-            double styrofoamInPack = double.Parse(Console.ReadLine());
+            int windowsCount = int.Parse(Console.ReadLine());
+            double styrofoamQuantityInPack = double.Parse(Console.ReadLine());
             double styrofoamPackPrice = double.Parse(Console.ReadLine());
 
-            double houseArea = house - (windows * 2.4);
-            double styrofoam = houseArea + houseArea * 0.10;
-            double styrofoamCost = Math.Ceiling(styrofoam / styrofoamInPack) * styrofoamPackPrice;
-
+            double houseArea = house - (windowsCount * 2.4);
+            double styrofoamQuantity = houseArea + houseArea * 0.10;
+            double styrofoamCost = Math.Ceiling(styrofoamQuantity / styrofoamQuantityInPack) * styrofoamPackPrice;
             if (budget >= styrofoamCost)
             {
                 Console.WriteLine("Spent: {0:f2}", styrofoamCost);
