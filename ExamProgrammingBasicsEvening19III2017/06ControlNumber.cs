@@ -13,18 +13,25 @@ namespace _06ControlNumber
             int N = int.Parse(Console.ReadLine());
             int M = int.Parse(Console.ReadLine());
             int controlNumber = int.Parse(Console.ReadLine());
+            
             int counter = 0;
             int number = 0;
-
             for (int n = 1; n <= N; n++)
             {
                 for (int m = M; m >= 1; m--)
                 {
                     number += (n * 2 + m * 3);
                     counter++;
-                    if (number >= controlNumber) break;
+                    if (number >= controlNumber)
+                    {
+                        break;
+                    }
                 }
-                if (number >= controlNumber) break;
+                
+                if (number >= controlNumber)
+                {
+                    break;
+                }
             }
 
             if (number >= controlNumber)
