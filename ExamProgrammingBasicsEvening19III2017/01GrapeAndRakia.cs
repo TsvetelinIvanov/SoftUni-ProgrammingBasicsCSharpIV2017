@@ -14,10 +14,10 @@ namespace _01GrapeAndRakia
             double kiloPerSquare = double.Parse(Console.ReadLine());
             double waste = double.Parse(Console.ReadLine());
 
-            double yield = vineyardArea * kiloPerSquare - waste;
-            double rakia = (yield * 0.45) / 7.5;
-            double rakiaIncome = rakia * 9.8;
-            double grapeIncome = (yield * 0.55) * 1.5;
+            double yieldQuontity = vineyardArea * kiloPerSquare - waste;
+            double rakiaQuontity = (yieldQuontity * 0.45) / 7.5;
+            double rakiaIncome = rakiaQuontity * 9.8;
+            double grapeIncome = (yieldQuontity * 0.55) * 1.5;
 
             Console.WriteLine("{0:f2}", rakiaIncome);
             Console.WriteLine("{0:f2}", grapeIncome);
