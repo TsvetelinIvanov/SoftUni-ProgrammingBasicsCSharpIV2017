@@ -10,34 +10,35 @@ namespace _04Logistics
     {
         static void Main(string[] args)
         {
-            int loads = int.Parse(Console.ReadLine());
-            int busLoads = 0;
-            int lorryLoads = 0;
-            int trainLoads = 0;
-            int allLoads = 0;
-
-            for (int i = 0; i < loads; i++)
+            int loadsCount = int.Parse(Console.ReadLine());
+            
+            int busLoadsWeight = 0;
+            int lorryLoadsWeight = 0;
+            int trainLoadsWeight = 0;
+            int allLoadsWeight = 0;
+            for (int i = 0; i < loadsCount; i++)
             {
                 int loadWeight = int.Parse(Console.ReadLine());
                 if (loadWeight <= 3)
                 {
-                    busLoads += loadWeight;
+                    busLoadsWeight += loadWeight;
                 }
                 else if (loadWeight <= 11)
                 {
-                    lorryLoads += loadWeight;
+                    lorryLoadsWeight += loadWeight;
                 }
                 else
                 {
-                    trainLoads += loadWeight;
+                    trainLoadsWeight += loadWeight;
                 }
-                allLoads += loadWeight;
+                
+                allLoadsWeight += loadWeight;
             }
 
-            double busPercent = busLoads * 100.0 / allLoads;
-            double lorryPercent = lorryLoads * 100.0 / allLoads;
-            double trainPercent = trainLoads * 100.0 / allLoads;
-            double average = (busLoads * 200.0 + lorryLoads * 175.0 + trainLoads * 120.0) / allLoads;
+            double busPercent = busLoadsWeight * 100.0 / allLoadsWeight;
+            double lorryPercent = lorryLoadsWeight * 100.0 / allLoadsWeight;
+            double trainPercent = trainLoadsWeight * 100.0 / allLoadsWeight;
+            double average = (busLoadsWeight * 200.0 + lorryLoadsWeight * 175.0 + trainLoadsWeight * 120.0) / allLoadsWeight;
 
             Console.WriteLine("{0:f2}", average);
             Console.WriteLine("{0:f2}%", busPercent);
