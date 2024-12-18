@@ -16,16 +16,15 @@ namespace _02FlowerShop
             int cactusesCount = int.Parse(Console.ReadLine());
             double giftPrice = double.Parse(Console.ReadLine());
 
-            double flowerIncome = 3.25 * magnoliasCount + 4.0 * hyacinthsCount + 3.5 * rosesCount + 8.0 * cactusesCount;
-            flowerIncome -= flowerIncome * 0.05;
-
-            if (flowerIncome >= giftPrice)
+            double flowersIncome = 3.25 * magnoliasCount + 4.0 * hyacinthsCount + 3.5 * rosesCount + 8.0 * cactusesCount;
+            flowersIncome -= flowersIncome * 0.05;
+            if (flowersIncome >= giftPrice)
             {
-                Console.WriteLine("She is left with {0} leva.", Math.Floor(flowerIncome - giftPrice));
+                Console.WriteLine("She is left with {0} leva.", Math.Floor(flowersIncome - giftPrice));
             }
             else 
             {
-                Console.WriteLine("She will have to borrow {0} leva.", Math.Ceiling(giftPrice - flowerIncome));
+                Console.WriteLine("She will have to borrow {0} leva.", Math.Ceiling(giftPrice - flowersIncome));
             }
         }
     }
