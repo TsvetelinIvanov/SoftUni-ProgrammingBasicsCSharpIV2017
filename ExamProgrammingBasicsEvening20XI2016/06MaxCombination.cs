@@ -26,6 +26,7 @@ namespace _06MaxCombination
                         break;
                     }
                 }
+                
                 if (counter >= maxCombination)
                 {
                     break;
