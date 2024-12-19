@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _01HousePaiting
+namespace _01HousePainting
 {
     class Program
     {
@@ -22,6 +22,7 @@ namespace _01HousePaiting
             double red = roof / 4.3;
 
             Console.WriteLine("{0:f2}", green);
+            
             Console.WriteLine("{0:f2}", red);
         }
     }
