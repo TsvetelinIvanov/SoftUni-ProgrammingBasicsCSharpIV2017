@@ -10,36 +10,49 @@ namespace _04TrainersSalary
     {
         static void Main(string[] args)
         {
-            int lectures = int.Parse(Console.ReadLine());
+            int lecturesCount = int.Parse(Console.ReadLine());
             double budget = double.Parse(Console.ReadLine());
-            double jelev = 0.0;
-            double roYal = 0.0;
-            double roli = 0.0;
-            double trofon = 0.0;
-            double sino = 0.0;
-            double others = 0.0;
+            
+            double jelevLecturesCount = 0.0;
+            double roYalLecturesCount = 0.0;
+            double roliLecturesCount = 0.0;
+            double trofonLecturesCount = 0.0;
+            double sinoLecturesCount = 0.0;
+            double othersLecturesCount = 0.0;
 
-            double lecturePrice = budget / lectures;
-            for (int i = 0; i < lectures; i++)
+            double lecturePrice = budget / lecturesCount;
+            for (int i = 0; i < lecturesCount; i++)
             {
-                string lecture = Console.ReadLine();
-                switch (lecture)
+                string trainer = Console.ReadLine();
+                switch (trainer)
                 {
-                    case "Jelev": jelev++; break;
-                    case "RoYaL": roYal++; break;
-                    case "Roli": roli++; break;
-                    case "Trofon": trofon++; break;
-                    case "Sino": sino++; break;
-                    default: others++; break;
+                    case "Jelev":
+                        jelevLecturesCount++;
+                        break;
+                    case "RoYaL":
+                        roYalLecturesCount++;
+                        break;
+                    case "Roli":
+                        roliLecturesCount++;
+                        break;
+                    case "Trofon":
+                        trofonLecturesCount++;
+                        break;
+                    case "Sino":
+                        sinoLecturesCount++;
+                        break;
+                    default:
+                        othersLecturesCount++;
+                        break;
                 }
             }
 
-            double salaryJelev = lecturePrice * jelev;
-            double salaryRoYal = lecturePrice * roYal;
-            double salaryRoli = lecturePrice * roli;
-            double salaryTrofon = lecturePrice * trofon;
-            double salarySino = lecturePrice * sino;
-            double salaryOthers = lecturePrice * others;
+            double salaryJelev = lecturePrice * jelevLecturesCount;
+            double salaryRoYal = lecturePrice * roYalLecturesCount;
+            double salaryRoli = lecturePrice * roliLecturesCount;
+            double salaryTrofon = lecturePrice * trofonLecturesCount;
+            double salarySino = lecturePrice * sinoLecturesCount;
+            double salaryOthers = lecturePrice * othersLecturesCount;
 
             Console.WriteLine("Jelev salary: {0:f2} lv", salaryJelev);
             Console.WriteLine("RoYaL salary: {0:f2} lv", salaryRoYal);
