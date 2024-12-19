@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _03Vacation
+namespace _03Vacantion
 {
     class Program
     {
@@ -12,10 +12,10 @@ namespace _03Vacation
         {
             double budget = double.Parse(Console.ReadLine());
             string season = Console.ReadLine();
+            
             double price = 0.0;
             string location = string.Empty;
             string place = string.Empty;
-
             if (budget <= 1000)
             {
                 place = "Camp";
@@ -41,7 +41,7 @@ namespace _03Vacation
                 else if (season == "Winter")
                 {
                     location = "Morocco";
-                    price = budget * 0.60;
+                    price = budget * 0.6;
                 }
             }
             else if (budget > 3000)
