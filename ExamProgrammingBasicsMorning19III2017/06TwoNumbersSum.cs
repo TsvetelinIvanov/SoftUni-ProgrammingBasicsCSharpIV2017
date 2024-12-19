@@ -13,9 +13,9 @@ namespace _06TwoNumbersSum
             int startNumber = int.Parse(Console.ReadLine());
             int stopNumber = int.Parse(Console.ReadLine());
             int magicNumber = int.Parse(Console.ReadLine());
+            
             int counter = 0;
             bool check = false;
-
             for (int i = startNumber; i >= stopNumber; i--)
             {
                 for (int j = startNumber; j >= stopNumber; j--)
@@ -24,10 +24,15 @@ namespace _06TwoNumbersSum
                     if (i + j == magicNumber)
                     {
                         Console.WriteLine("Combination N:{0} ({1} + {2} = {3})", counter, i, j, magicNumber);
-                        check = true; break;
+                        check = true;
+                        break;
                     }                    
                 }
-                if (check == true) break;
+                
+                if (check == true)
+                {
+                    break;
+                }
             }
 
             if (check == false)
