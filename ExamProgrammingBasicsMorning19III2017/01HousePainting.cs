@@ -21,8 +21,7 @@ namespace _01HousePainting
             double roof = 2 * (x * y) + 2 * (x * h / 2);
             double red = roof / 4.3;
 
-            Console.WriteLine("{0:f2}", green);
-            
+            Console.WriteLine("{0:f2}", green);            
             Console.WriteLine("{0:f2}", red);
         }
     }
