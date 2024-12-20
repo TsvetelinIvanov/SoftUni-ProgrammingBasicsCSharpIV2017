@@ -10,45 +10,46 @@ namespace _04SoftUniCamp
     {
         static void Main(string[] args)
         {
-            int groups = int.Parse(Console.ReadLine());
+            int groupsCount = int.Parse(Console.ReadLine());
+            
             int carGroup = 0;
             int microbusGroup = 0;
             int busGroup = 0;
             int autobusGroup = 0;
             int trainGroup = 0;
-            int allPeople = 0;
-
-            for (int i = 0; i < groups; i++)
+            int allPeopleCount = 0;
+            for (int i = 0; i < groupsCount; i++)
             {
-                int people = int.Parse(Console.ReadLine());
-                if (people <= 5)
+                int peopleCount = int.Parse(Console.ReadLine());
+                if (peopleCount <= 5)
                 {
-                    carGroup += people;
+                    carGroup += peopleCount;
                 }
-                else if (people <= 12)
+                else if (peopleCount <= 12)
                 {
-                    microbusGroup += people;
+                    microbusGroup += peopleCount;
                 }
-                else if (people <= 25)
+                else if (peopleCount <= 25)
                 {
-                    busGroup += people;
+                    busGroup += peopleCount;
                 }
-                else if (people <= 40)
+                else if (peopleCount <= 40)
                 {
-                    autobusGroup += people;
+                    autobusGroup += peopleCount;
                 }
                 else
                 {
-                    trainGroup += people;
+                    trainGroup += peopleCount;
                 }
-                allPeople += people;
+                
+                allPeopleCount += peopleCount;
             }
 
-            double carPercent = carGroup * 100.0 / allPeople;
-            double microbusPercent = microbusGroup * 100.0 / allPeople;
-            double busPercent = busGroup * 100.0 / allPeople;
-            double autobusPercent = autobusGroup * 100.0 / allPeople;
-            double trainPercent = trainGroup * 100.0 / allPeople;
+            double carPercent = carGroup * 100.0 / allPeopleCount;
+            double microbusPercent = microbusGroup * 100.0 / allPeopleCount;
+            double busPercent = busGroup * 100.0 / allPeopleCount;
+            double autobusPercent = autobusGroup * 100.0 / allPeopleCount;
+            double trainPercent = trainGroup * 100.0 / allPeopleCount;
 
             Console.WriteLine("{0:f2}%", carPercent);
             Console.WriteLine("{0:f2}%", microbusPercent);
