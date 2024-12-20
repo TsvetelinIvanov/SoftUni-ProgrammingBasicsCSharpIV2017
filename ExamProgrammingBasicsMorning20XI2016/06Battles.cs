@@ -10,26 +10,29 @@ namespace _06Battles
     {
         static void Main(string[] args)
         {
-            int pokemons1 = int.Parse(Console.ReadLine());
-            int pokemons2 = int.Parse(Console.ReadLine());
-            int maxBattles = int.Parse(Console.ReadLine());
+            int pokemonsCount1 = int.Parse(Console.ReadLine());
+            int pokemonsCount2 = int.Parse(Console.ReadLine());
+            int maxBattlesCount = int.Parse(Console.ReadLine());
+            
             int counter = 0;
-            bool battles = true;
-
-            for (int p1 = 1; p1 <= pokemons1; p1++)
+            bool areBattlesPossible = true;
+            for (int p1 = 1; p1 <= pokemonsCount1; p1++)
             {
-                for (int p2 = 1; p2 <= pokemons2; p2++)
+                for (int p2 = 1; p2 <= pokemonsCount2; p2++)
                 {
                     Console.Write("({0} <-> {1}) ", p1, p2);
                     counter++;
-                    if (counter >= maxBattles)
+                    if (counter >= maxBattlesCount)
                     {
-                        battles = false;
+                        areBattlesPossible = false;
                         break;
                     }
                 }
-                if (battles == false) 
+                
+                if (areBattlesPossible == false)
+                {
                     break;
+                }
             }            
         }
     }
