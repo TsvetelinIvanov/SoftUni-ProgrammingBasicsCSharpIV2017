@@ -21,19 +21,19 @@ namespace _05Fox
 	    }
 
             int middleAsterisksCount = n;
-            int sideAsterisksCount = (lenght - midleAsteriskCount - 4) / 2;
+            int sideAsterisksCount = (lenght - middleAsteriskCount - 4) / 2;
             for (int i = 0; i < n / 3; i++)
 	    {                
-                Console.WriteLine(@"|{0}\{1}/{0}|", new string('*', sideAsterisksCount), new string('*', midleAsterisksCount));
+                Console.WriteLine(@"|{0}\{1}/{0}|", new string('*', sideAsterisksCount), new string('*', middleAsterisksCount));
                 sideAstericsCount++;
-                midleAstericsCount -= 2;
+                middleAstericsCount -= 2;
 	    }
 
             for (int i = 1; i <= n; i++)
             {
-                int asterisksCount = i;
-                int dashesCount = lenght - 2 - 2 * asterisksCount;
-                Console.WriteLine(@"{0}\{1}/{0}", new string('-', asterisksCount), new string('*', dashesCount));
+                int dashesCount = i;
+                int asterisksCount = lenght - 2 - 2 * dashesCount;
+                Console.WriteLine(@"{0}\{1}/{0}", new string('-', dashesCount), new string('*', asterisksCount));
             }
         }
     }
