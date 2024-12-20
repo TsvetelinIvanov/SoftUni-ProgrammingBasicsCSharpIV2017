@@ -10,14 +10,13 @@ namespace _02Pets
     {
         static void Main(string[] args)
         {
-            int days = int.Parse(Console.ReadLine());
+            int daysCount = int.Parse(Console.ReadLine());
             int food = int.Parse(Console.ReadLine());
             double dogFood = double.Parse(Console.ReadLine());
             double catFood = double.Parse(Console.ReadLine());
             double turtleFood = double.Parse(Console.ReadLine());
 
-            double animalFood = dogFood * days + catFood * days + (turtleFood / 1000) * days;
-            
+            double animalFood = dogFood * daysCount + catFood * daysCount + (turtleFood / 1000) * daysCount;            
             if (food >= animalFood)
             {
                 Console.WriteLine("{0} kilos of food left.", Math.Floor(food - animalFood));
