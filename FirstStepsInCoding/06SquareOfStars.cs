@@ -10,16 +10,16 @@ namespace _06SquareOfStars
     {
         static void Main(string[] args)
         {
-            var n = int.Parse(Console.ReadLine());
-            string stars = new string('*', n);
+            int n = int.Parse(Console.ReadLine());
+            string starsLine = new string('*', n);
 
-            Console.WriteLine(stars);
+            Console.WriteLine(starsLine);
             for (int i = 1; i < n - 1; i++)
             {
                 Console.WriteLine("*" + new string(' ', n - 2) + "*");
             }
 
-            Console.WriteLine(stars);
+            Console.WriteLine(starsLine);
         }
     }
 }
