@@ -10,9 +10,9 @@ namespace _05RectangleArea
     {
         static void Main(string[] args)
         {
-            var a = decimal.Parse(Console.ReadLine());
-            var b = decimal.Parse(Console.ReadLine());
-            var area = a * b;
+            decimal a = decimal.Parse(Console.ReadLine());
+            decimal b = decimal.Parse(Console.ReadLine());
+            decimal area = a * b;
             Console.WriteLine(area);
         }
     }
