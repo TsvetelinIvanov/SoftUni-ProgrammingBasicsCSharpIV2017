@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _04TriangleOf55stars
+namespace _04TriangleOf55Stars
 {
     class Program
     {
